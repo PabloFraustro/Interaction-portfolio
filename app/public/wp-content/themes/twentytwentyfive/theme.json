@@ -180,6 +180,67 @@
 							"fontFamily": "\"Fira Code\""
 						}
 					]
+				},
+				{
+					"fontFamily": "GT-Walsheim",
+					"slug": "gt-walsheim",
+					"fontFace": [
+						{
+							"fontFamily": "GT-Walsheim",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"http://localhost:10014/wp-content/uploads/2024/11/GT-Walsheim-Light-Trial.otf"
+							]
+						},
+						{
+							"fontFamily": "GT-Walsheim",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"http://localhost:10014/wp-content/uploads/2024/11/GT-Walsheim-Regular-Trial.otf"
+							]
+						},
+						{
+							"fontFamily": "GT-Walsheim",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"http://localhost:10014/wp-content/uploads/2024/11/GT-Walsheim-Medium-Trial.otf"
+							]
+						},
+						{
+							"fontFamily": "GT-Walsheim",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"http://localhost:10014/wp-content/uploads/2024/11/GT-Walsheim-Bold-Trial.otf"
+							]
+						},
+						{
+							"fontFamily": "GT-Walsheim",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "200",
+							"src": [
+								"http://localhost:10014/wp-content/uploads/2024/11/GT-Walsheim-Thin-Trial.otf"
+							]
+						},
+						{
+							"fontFamily": "GT-Walsheim",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "100",
+							"src": [
+								"http://localhost:10014/wp-content/uploads/2024/11/GT-Walsheim-Ultra-Light-Trial.otf"
+							]
+						}
+					],
+					"isBcf": true
 				}
 			]
 		},

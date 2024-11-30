@@ -15,7 +15,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🐦‍⬛","🐦​⬛")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
 </script>
 <link rel="stylesheet" id="elementor-frontend-css" href="https://pablo-designportfolio.netlify.app/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.25.10" media="all">
-<link rel="stylesheet" id="elementor-post-54-css" href="https://pablo-designportfolio.netlify.app/wp-content/uploads/elementor/css/post-54.css?ver=1732958043" media="all">
+<link rel="stylesheet" id="elementor-post-54-css" href="https://pablo-designportfolio.netlify.app/wp-content/uploads/elementor/css/post-54.css?ver=1732998605" media="all">
 <style id="wp-block-post-content-inline-css">.wp-block-post-content{display:flow-root}</style>
 <style id="wp-block-paragraph-inline-css">.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}</style>
 <style id="wp-block-group-inline-css">.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}</style>
@@ -246,15 +246,51 @@ display: none !important;
 display:block !important;
 }
 
+.elementor-54 .elementor-element.elementor-element-26129df > .elementor-widget-container{
+padding: 0 !important;
+line-height:1.2 !important;} 
+
+.banner h2{
+font-size:100px !important;
+}
+
+.contact-text{
+width:100vw !important;
+margin: 0 !important;
+padding-right: 12% !important;
+    padding-left: 12% !important;
+line-height:1.2 !important;
+font-size:32px !important;
+}
+
+.contact-text .elementor-widget-container,.animation .elementor-widget-container
+{
+padding: 0 !important;
+}
+
+.animation-btn{
+   place-self: center!important;
+padding: 10% 0 !important;}
+
+.animation h2{
+padding-top:30% !important}
+
 .fade-banner {
 grid-column: span 5 !important;
 align:center;
 }
 
+.fade-banner{
+margin: 5% 12% !important;}
+
 .credits, .app-description{
     padding-right: 12% !important;
     padding-left: 12% !important;
     font-size: 14px !important;
+}
+
+.cixi-list{
+padding-left:0 !important;
 }
 
 .has-custom-7-font-size, .has-custom-5-font-size, .has-custom-2-font-size {
@@ -268,11 +304,11 @@ padding: 15% 12% !important;
 
 .page-title{
 padding: 15% 12% !important;
+margin: 0 !important;
 }
 
 .cixi-description, .page-description {
     font-size: 32px !important;
-        padding: 0 12% 10% 12% !important;
 }
 
 .nomobile{
@@ -313,6 +349,9 @@ font-size: 24px !important;
 margin-left:0% !important;
 margin-right:0% !important;
 }
+
+.banner-video{
+margin: 0 !important;}
 
 
 }</style>
@@ -407,7 +446,7 @@ margin-right:0% !important;
 Code &amp;
 Creativity</h1>		</div>
 				</div>
-				<div class="elementor-element elementor-element-26129df fade ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="26129df" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-26129df homepage-description fade page-center-txt ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="26129df" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 							<p><span style="white-space-collapse: preserve;">Hola! I’m Pablo, an interaction and motion designer who uses empathy and creativity to elevate brands. </span></p>						</div>
 				</div>
@@ -502,7 +541,7 @@ Creativity</h1>		</div>
 				</div>
 		<div class="elementor-element elementor-element-4371477 e-flex e-con-boxed e-con e-parent" data-id="4371477" data-element_type="container" data-settings="{&quot;_ob_use_container_extras&quot;:&quot;no&quot;,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-e1145a0 right elementor-widget__width-initial ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="e1145a0" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-e1145a0 right contact-text elementor-widget__width-initial ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="e1145a0" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 							<p style="text-align: left;"><span style="white-space-collapse: preserve;">I work at the intersection of technical detail and artistic expression, blending both to create meaningful experiences.</span></p>						</div>
 				</div>
@@ -529,7 +568,7 @@ Creativity</h1>		</div>
 				</div>
 		<div class="elementor-element elementor-element-e8db5d2 e-con-full e-flex e-con e-child" data-id="e8db5d2" data-element_type="container" data-settings="{&quot;_ob_use_container_extras&quot;:&quot;no&quot;,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
 		<div class="elementor-element elementor-element-04d082e e-con-full e-flex e-con e-child" data-id="04d082e" data-element_type="container" data-settings="{&quot;_ob_use_container_extras&quot;:&quot;no&quot;,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
-				<div class="elementor-element elementor-element-a2df383 ob-has-background-overlay elementor-widget elementor-widget-image" data-id="a2df383" data-element_type="widget" data-settings="{&quot;_ob_photomorph_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-a2df383 nomobile ob-has-background-overlay elementor-widget elementor-widget-image" data-id="a2df383" data-element_type="widget" data-settings="{&quot;_ob_photomorph_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 													<img decoding="async" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/elementor/thumbs/animation_1-qxknh5llvnb6tja5tadlh202slearhbestu7rexnnk.jpg" title="animation_1" alt="Animation example 2" loading="lazy">													</div>
 				</div>
@@ -539,11 +578,11 @@ Creativity</h1>		</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-cf9f965 e-con-full e-flex e-con e-child" data-id="cf9f965" data-element_type="container" data-settings="{&quot;_ob_use_container_extras&quot;:&quot;no&quot;,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
-				<div class="elementor-element elementor-element-b37d182 animation ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="b37d182" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-b37d182 animation contact-text ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="b37d182" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 							<p style="text-align: left;"><span style="white-space-collapse: preserve;">A showcase of handcrafted short animations as personal experimentation for aesthetics and storytelling.</span></p>						</div>
 				</div>
-				<div class="elementor-element elementor-element-f7f61bd animation ob-has-background-overlay elementor-widget elementor-widget-button" data-id="f7f61bd" data-element_type="widget" data-settings="{&quot;_ob_butterbutton_use_it&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-f7f61bd animation animation-btn ob-has-background-overlay elementor-widget elementor-widget-button" data-id="f7f61bd" data-element_type="widget" data-settings="{&quot;_ob_butterbutton_use_it&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 							<div class="elementor-button-wrapper">
 					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pablofraustro.com/" target="_blank">
@@ -567,7 +606,7 @@ Creativity</h1>		</div>
 	    
 		</div>
 				</div>
-		<div class="elementor-element elementor-element-c0a6cdf e-grid e-con-full e-con e-child" data-id="c0a6cdf" data-element_type="container" data-settings="{&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
+		<div class="elementor-element elementor-element-c0a6cdf e-grid e-con-full nomobile e-con e-child" data-id="c0a6cdf" data-element_type="container" data-settings="{&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
 		<div class="elementor-element elementor-element-e358010 e-con-full fadeinlist e-flex ob-is-container-extras e-con e-child" data-id="e358010" data-element_type="container" data-settings="{&quot;_ob_use_container_extras&quot;:&quot;yes&quot;,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
 				<div class="elementor-element elementor-element-4998bad elementor-widget__width-initial ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="4998bad" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
@@ -584,6 +623,26 @@ Creativity</h1>		</div>
 				<div class="elementor-element elementor-element-9de90da elementor-widget__width-initial ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="9de90da" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 							<p style="text-align: left;">Systems engineer &#8211; <span style="color: #fffcd7;">Continental         </span>Gdl, Mexico</p>						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-5c8e5c7 e-grid e-con-full mobil e-con e-child" data-id="5c8e5c7" data-element_type="container" data-settings="{&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
+		<div class="elementor-element elementor-element-0130ec6 e-con-full fadeinlist e-flex ob-is-container-extras e-con e-child" data-id="0130ec6" data-element_type="container" data-settings="{&quot;_ob_use_container_extras&quot;:&quot;yes&quot;,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
+				<div class="elementor-element elementor-element-e7f89f7 elementor-widget__width-initial ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="e7f89f7" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p style="text-align: left;">Interaction designer &#8211; <span style="color: #fffcd7;">Diorama<br><span style="color: #ffffff;">Milan, Italy</span></span></p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-64b7291 e-con-full fadeinlist e-flex ob-is-container-extras e-con e-child" data-id="64b7291" data-element_type="container" data-settings="{&quot;_ob_use_container_extras&quot;:&quot;yes&quot;,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
+				<div class="elementor-element elementor-element-7c19cc4 elementor-widget__width-initial ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="7c19cc4" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p style="text-align: left;">Interaction designer &#8211; <span style="color: #fffcd7;">CIXI<br><span style="color: #ffffff;">Annecy, France</span></span></p>						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7e584b7 e-con-full fadeinlist e-flex ob-is-container-extras e-con e-child" data-id="7e584b7" data-element_type="container" data-settings="{&quot;_ob_use_container_extras&quot;:&quot;yes&quot;,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
+				<div class="elementor-element elementor-element-52e4b12 elementor-widget__width-initial ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="52e4b12" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p style="text-align: left;">Systems Engineer &#8211; <span style="color: #fffcd7;">Continental<br><span style="color: #ffffff;">Guadalajara, México</span></span></p>						</div>
 				</div>
 				</div>
 				</div>
@@ -661,8 +720,12 @@ ScrollTrigger.create({
 		});
 
 	let right = gsap.utils.toArray('.right');
+		
+	gsap.from(right,{
+		x:-100
+	});
 	gsap.to(right,{
-			x:100,
+			x:0,
 		    opacity:1,
 		    stagger: 0.1,
 			scrollTrigger:{
@@ -674,8 +737,12 @@ ScrollTrigger.create({
 		});
 		
 	let animation = gsap.utils.toArray('.animation');
+		
+	gsap.from(animation,{
+		x:-30
+	});
 	gsap.to(animation,{
-			x:100,
+			x:0,
 		    opacity:1,
 		    stagger: 0.1,
 			scrollTrigger:{
@@ -826,7 +893,7 @@ gsap.utils.toArray('.fadeout-after').forEach(element => {
 <script src="https://pablo-designportfolio.netlify.app/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.10" id="elementor-webpack-runtime-js"></script>
 <script src="https://pablo-designportfolio.netlify.app/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.10" id="elementor-frontend-modules-js"></script>
 <script src="https://pablo-designportfolio.netlify.app/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
-<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.25.10","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"home_screen":true,"nested-elements":true,"editor_v2":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"launchpad-checklist":true},"urls":{"assets":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/pablo-designportfolio.netlify.app\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"a09f8e4c55"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":54,"title":"Pablo%20Fraustro%20%E2%80%93%20Interaction%20designer","excerpt":"","featuredImage":false}};</script>
+<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.25.10","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"home_screen":true,"nested-elements":true,"editor_v2":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"launchpad-checklist":true},"urls":{"assets":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/pablo-designportfolio.netlify.app\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"edf2ce2f28"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":54,"title":"Pablo%20Fraustro%20%E2%80%93%20Interaction%20designer","excerpt":"","featuredImage":false}};</script>
 <script src="https://pablo-designportfolio.netlify.app/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.10" id="elementor-frontend-js"></script>
 </body>
 </html>

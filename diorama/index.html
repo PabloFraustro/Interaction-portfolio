@@ -233,15 +233,97 @@ display: none !important;
     }
   }
 
-  /* Apply the animation to the .fade-banner class */
+  
   .fade-banner {
     animation: fadeIn 1s ease;
   }
+
+.mobile{
+display: none !important;
+}
+
+/* responsive */
+@media only screen and (max-width: 780px) {
+
+.mobile{
+display:block !important;
+}
+
+.fade-banner {
+grid-column: span 5 !important;
+align:center;
+}
+
+.credits, .app-description{
+    padding-right: 12% !important;
+    padding-left: 12% !important;
+    font-size: 14px !important;
+}
+
+.has-custom-7-font-size, .has-custom-5-font-size, .has-custom-2-font-size {
+    font-size: 32px !important;
+}
+
+.page-center-txt{
+margin: 0 !important;
+padding: 15% 12% !important;
+}
+
+.page-title{
+padding: 15% 12% !important;
+}
+
+.cixi-description, .page-description {
+    font-size: 32px !important;
+        padding: 0 12% 10% 12% !important;
+}
+
+.nomobile{
+display:none !important;
+}
+
+.homepage-footer, .cixi-footer, .page-footer{
+padding: 5% !important;
+padding-top: 10% !important;
+}
+
+.page-footer .scroll-next{
+flex-wrap:wrap !important;
+padding-left:10% !important;
+justify-content: left !important;
+}
+
+.homepage-name{
+    text-align: left;
+    padding-left: 10%;
+    font-size: 1.35em;
+}
+
+.homepage-title h1{
+    font-size: 15vw !important;
+    line-height: 14vw !important;
+    letter-spacing: -1px !important;
+    word-spacing: 0px !important;
+    padding-left: 15% !important;
+}
+
+.app-image, .app-description{
+margin: 0 !important;
+font-size: 24px !important;
+}
+
+.appscreens{
+margin-left:0% !important;
+margin-right:0% !important;
+}
+
+
+}
 :root :where(.wp-block-post-navigation-link){font-size: var(--wp--preset--font-size--medium);}
 :root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--medium);}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){text-decoration: underline;}</style>
-<style id="core-block-supports-inline-css">.wp-container-core-navigation-is-layout-1{flex-wrap:nowrap;gap:0;justify-content:space-between;}.wp-container-core-group-is-layout-1 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-1 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-2{top:calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));position:sticky;z-index:10;}.wp-elements-22cabbc572c5402641672131b495ff8c a:where(:not(.wp-element-button)){color:var(--wp--preset--color--custom-black);}.wp-container-content-1{grid-column:span 3;grid-row:span 1;}.wp-elements-27ca3d9af6a2b4cc53528f7eb4afdc5e a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-2{grid-column:span 2;grid-row:span 1;}.wp-elements-feab58546b0748d4c4ae5405018a5ba6 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-3{grid-column:span 1;}.wp-container-core-group-is-layout-2{grid-template-columns:repeat(5, minmax(0, 1fr));gap:20px;}.wp-container-core-group-is-layout-3{gap:0px;flex-direction:column;align-items:flex-start;}.wp-elements-210ccc6d07332d2bcf1066be6f0cb35b a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-4{flex-basis:25%;}.wp-elements-d6c412a488230326b1ca249fed748aa8 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-6{flex-basis:5%;}.wp-container-core-group-is-layout-4{flex-wrap:nowrap;}.wp-container-core-group-is-layout-5{gap:0px;flex-direction:column;align-items:flex-start;}.wp-container-content-7{flex-basis:5%;}.wp-container-core-group-is-layout-6{flex-wrap:nowrap;justify-content:space-between;align-items:flex-start;}.wp-container-core-group-is-layout-7{flex-wrap:nowrap;}.wp-container-core-group-is-layout-8{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-9 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-9 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-is-layout-10{flex-wrap:nowrap;}</style>
+<style id="core-block-supports-inline-css">.wp-container-core-navigation-is-layout-1{flex-wrap:nowrap;gap:0;justify-content:space-between;}.wp-container-core-group-is-layout-1 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-1 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-2{top:calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));position:sticky;z-index:10;}.wp-elements-713b38425cf79434ba699596a7f5d70f a:where(:not(.wp-element-button)){color:var(--wp--preset--color--custom-black);}.wp-container-content-1{grid-column:span 3;grid-row:span 1;}.wp-elements-c5f4b56d800746ba199d5a6aca2e6129 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-2{grid-column:span 2;grid-row:span 1;}.wp-elements-cfb0375facea6652ea96a4d094bc72bf a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-3{grid-column:span 1;}.wp-container-core-group-is-layout-2{grid-template-columns:repeat(5, minmax(0, 1fr));gap:20px;}.wp-container-core-group-is-layout-3{gap:0px;flex-direction:column;align-items:flex-start;}.wp-elements-d2feaf746d85e9645f857ae189fe124c a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-4{flex-basis:400px;}.wp-container-content-5{flex-basis:25%;}.wp-elements-28667a969655ab83ea200de367654150 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-7{flex-basis:5%;}.wp-container-core-group-is-layout-4{flex-wrap:nowrap;}.wp-container-core-group-is-layout-5{gap:0px;flex-direction:column;align-items:flex-start;}.wp-container-content-8{flex-basis:5%;}.wp-container-core-group-is-layout-6{flex-wrap:nowrap;justify-content:center;align-items:flex-start;}.wp-container-core-group-is-layout-7{flex-wrap:nowrap;}.wp-container-core-group-is-layout-8{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-9 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-9 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-is-layout-10{flex-wrap:nowrap;}</style>
 <style id="wp-block-template-skip-link-inline-css">.skip-link.screen-reader-text {
 			border: 0;
 			clip: rect(1px,1px,1px,1px);
@@ -343,31 +425,31 @@ display: none !important;
 
 <div class="entry-content wp-block-post-content is-layout-flow wp-block-post-content-is-layout-flow">
 <div class="wp-block-group is-layout-grid wp-container-core-group-is-layout-2 wp-block-group-is-layout-grid">
-<div style="height:100%" aria-hidden="true" class="wp-block-spacer"></div>
+<div style="height:100%" aria-hidden="true" class="wp-block-spacer nomobile"></div>
 
 
 
-<h2 class="wp-block-heading has-text-align-left fade-banner has-custom-black-color has-text-color has-link-color has-gt-walsheim-font-family wp-elements-22cabbc572c5402641672131b495ff8c wp-container-content-1" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:0px;font-size:clamp(2.629rem, 2.629rem + ((1vw - 0.2rem) * 2.964), 5rem);font-style:normal;font-weight:500">Diorama</h2>
+<h2 class="wp-block-heading has-text-align-left fade-banner page-title has-custom-black-color has-text-color has-link-color has-gt-walsheim-font-family wp-elements-713b38425cf79434ba699596a7f5d70f wp-container-content-1" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:0px;font-size:clamp(2.629rem, 2.629rem + ((1vw - 0.2rem) * 2.964), 5rem);font-style:normal;font-weight:500">Diorama</h2>
 
 
 
-<div style="height:100%" aria-hidden="true" class="wp-block-spacer"></div>
+<div style="height:100%" aria-hidden="true" class="wp-block-spacer nomobile"></div>
 
 
 
-<div style="height:100%" aria-hidden="true" class="wp-block-spacer"></div>
+<div style="height:100%" aria-hidden="true" class="wp-block-spacer nomobile"></div>
 
 
 
-<p class="fade-banner has-contrast-color has-text-color has-link-color has-gt-walsheim-font-family wp-elements-27ca3d9af6a2b4cc53528f7eb4afdc5e wp-container-content-2" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:clamp(1.403em, 1.403rem + ((1vw - 0.2em) * 1.121), 2.3em);font-style:normal;font-weight:500;line-height:1.4">An immersive website to showcase Diorama’s distinctive vision.</p>
+<p class="fade-banner page-description has-contrast-color has-text-color has-link-color has-gt-walsheim-font-family wp-elements-c5f4b56d800746ba199d5a6aca2e6129 wp-container-content-2" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:clamp(1.403em, 1.403rem + ((1vw - 0.2em) * 1.121), 2.3em);font-style:normal;font-weight:500;line-height:1.4">An immersive website to showcase Diorama’s distinctive vision.</p>
 
 
 
-<p class="fade-banner has-contrast-color has-text-color has-link-color has-gt-walsheim-font-family has-custom-4-font-size wp-elements-feab58546b0748d4c4ae5405018a5ba6 wp-container-content-3" style="margin-top:0px;margin-right:20%;margin-bottom:0px;margin-left:20%;padding-top:10px">Diorama blurs the boundaries between disciplines, crafting dynamic universes and extending visual experiences across architecture, design, fashion, cinema, and art.</p>
+<p class="fade-banner page-center-txt has-contrast-color has-text-color has-link-color has-gt-walsheim-font-family has-custom-4-font-size wp-elements-cfb0375facea6652ea96a4d094bc72bf wp-container-content-3" style="margin-top:0px;margin-right:20%;margin-bottom:0px;margin-left:20%;padding-top:10px">Diorama blurs the boundaries between disciplines, crafting dynamic universes and extending visual experiences across architecture, design, fashion, cinema, and art.</p>
 
 
 
-<div style="height:100%" aria-hidden="true" class="wp-block-spacer"></div>
+<div style="height:100%" aria-hidden="true" class="wp-block-spacer nomobile"></div>
 </div>
 
 
@@ -376,7 +458,7 @@ display: none !important;
 
 
 
-<p class="has-text-align-left fadeinleft has-custom-7-font-size" style="padding-top:var(--wp--preset--spacing--70);padding-right:10%;padding-bottom:var(--wp--preset--spacing--70);padding-left:30%;font-style:normal;font-weight:300;line-height:1.3">Simulating an art exhibition, the experience allows user to explore a virtual gallery.</p>
+<p class="has-text-align-left fadeinleft page-center-txt has-custom-7-font-size" style="padding-top:var(--wp--preset--spacing--70);padding-right:10%;padding-bottom:var(--wp--preset--spacing--70);padding-left:30%;font-style:normal;font-weight:300;line-height:1.3">Simulating an art exhibition, the experience allows user to explore a virtual gallery.</p>
 
 
 
@@ -388,7 +470,7 @@ display: none !important;
 
 
 
-<p class="fadeout-after has-custom-5-font-size" style="padding-top:var(--wp--preset--spacing--60);padding-right:20%;padding-bottom:var(--wp--preset--spacing--50);padding-left:40%;font-style:normal;font-weight:400">For the creation process, a specific care to preserving detail on 3D models was needed to recreate on web code.</p>
+<p class="fadeout-after page-center-txt has-custom-5-font-size" style="padding-top:var(--wp--preset--spacing--60);padding-right:20%;padding-bottom:var(--wp--preset--spacing--50);padding-left:40%;font-style:normal;font-weight:400">For the creation process, a specific care to preserving detail on 3D models was needed to recreate on web code.</p>
 
 
 
@@ -444,6 +526,20 @@ display: none !important;
 });
 
 function my_stuff() {
+		
+	//fade out with no initial animation 
+gsap.utils.toArray('.fadeout-after').forEach(element => {
+  gsap.set(element, { opacity: 0 });
+  gsap.to(element, {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: element,
+      start: "top 80%",
+      end: "bottom 50%",
+      scrub: 1,
+	}
+  });
+});
 	
 	//sticky menu
 var actionNav = gsap.to('.menu', {y:'-=60', duration:0.5, ease:'power2.in', paused:true});
@@ -476,7 +572,7 @@ ScrollTrigger.create({
 		});
 
 
-		const races = document.querySelector(".carrousel");
+const races = document.querySelector(".carrousel");
 
 function getScrollAmount() {
 	let racesWidth = races.scrollWidth;
@@ -587,18 +683,18 @@ scrollTrigger: {
 </div>
 
 <footer class="wp-block-template-part">
-<div class="wp-block-group is-layout-flow wp-container-core-group-is-layout-9 wp-block-group-is-layout-flow" style="padding-top:150px;padding-right:20%;padding-bottom:var(--wp--preset--spacing--50);padding-left:20%">
-<div class="wp-block-group is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-6 wp-block-group-is-layout-flex" style="padding-right:0;padding-bottom:180px;padding-left:0">
-<p class="fadeout-after has-contrast-color has-text-color has-link-color has-custom-2-font-size wp-elements-210ccc6d07332d2bcf1066be6f0cb35b" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--50);font-style:normal;font-weight:300"><a href="#">SCROLL TO TOP</a></p>
+<div class="wp-block-group page-footer is-layout-flow wp-container-core-group-is-layout-9 wp-block-group-is-layout-flow" style="padding-top:150px;padding-right:20%;padding-bottom:var(--wp--preset--spacing--50);padding-left:20%">
+<div class="wp-block-group scroll-next is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-6 wp-block-group-is-layout-flex" style="padding-right:0;padding-bottom:180px;padding-left:0">
+<p class="fadeout-after has-contrast-color has-text-color has-link-color has-custom-2-font-size wp-elements-d2feaf746d85e9645f857ae189fe124c wp-container-content-4" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--50);font-style:normal;font-weight:300"><a href="#">SCROLL TO TOP</a></p>
 
 
 
-<div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer wp-container-content-4"></div>
+<div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer nomobile wp-container-content-5"></div>
 
 
 
 <div class="wp-block-group is-vertical is-content-justification-left is-layout-flex wp-container-core-group-is-layout-5 wp-block-group-is-layout-flex" style="padding-bottom:0/">
-<p class="has-text-align-left fadeout-after has-contrast-color has-text-color has-link-color wp-elements-d6c412a488230326b1ca249fed748aa8" style="padding-bottom:0;font-size:clamp(2.629rem, 2.629rem + ((1vw - 0.2rem) * 2.964), 5rem);font-style:normal;font-weight:500">NEXT</p>
+<p class="has-text-align-left fadeout-after next has-contrast-color has-text-color has-link-color wp-elements-28667a969655ab83ea200de367654150" style="padding-bottom:0;font-size:clamp(2.629rem, 2.629rem + ((1vw - 0.2rem) * 2.964), 5rem);font-style:normal;font-weight:500">NEXT</p>
 
 
 
@@ -606,13 +702,13 @@ scrollTrigger: {
 <div class="post-navigation-link-next fadeout-after wp-block-post-navigation-link has-custom-2-font-size"><a href="https://pablo-designportfolio.netlify.app/lexus/" rel="next">LEXUS</a></div>
 
 
-<div style="height:40%;width:0px" aria-hidden="true" class="wp-block-spacer wp-container-content-6"></div>
-</div>
-</div>
-
-
-
 <div style="height:40%;width:0px" aria-hidden="true" class="wp-block-spacer wp-container-content-7"></div>
+</div>
+</div>
+
+
+
+<div style="height:40%;width:0px" aria-hidden="true" class="wp-block-spacer nomobile wp-container-content-8"></div>
 </div>
 
 
@@ -622,12 +718,12 @@ scrollTrigger: {
 
 
 
-<p class="has-medium-font-size">Pablo Fraustro 2024</p>
+<p class="nomobile has-medium-font-size">Pablo Fraustro 2024</p>
 
 
 
 <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-7 wp-block-group-is-layout-flex">
-<p class="has-medium-font-size">Socials</p>
+<p class="nomobile has-medium-font-size">Socials</p>
 
 
 

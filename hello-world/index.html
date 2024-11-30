@@ -232,10 +232,92 @@ display: none !important;
     }
   }
 
-  /* Apply the animation to the .fade-banner class */
+  
   .fade-banner {
     animation: fadeIn 1s ease;
   }
+
+.mobile{
+display: none !important;
+}
+
+/* responsive */
+@media only screen and (max-width: 780px) {
+
+.mobile{
+display:block !important;
+}
+
+.fade-banner {
+grid-column: span 5 !important;
+align:center;
+}
+
+.credits, .app-description{
+    padding-right: 12% !important;
+    padding-left: 12% !important;
+    font-size: 14px !important;
+}
+
+.has-custom-7-font-size, .has-custom-5-font-size, .has-custom-2-font-size {
+    font-size: 32px !important;
+}
+
+.page-center-txt{
+margin: 0 !important;
+padding: 15% 12% !important;
+}
+
+.page-title{
+padding: 15% 12% !important;
+}
+
+.cixi-description, .page-description {
+    font-size: 32px !important;
+        padding: 0 12% 10% 12% !important;
+}
+
+.nomobile{
+display:none !important;
+}
+
+.homepage-footer, .cixi-footer, .page-footer{
+padding: 5% !important;
+padding-top: 10% !important;
+}
+
+.page-footer .scroll-next{
+flex-wrap:wrap !important;
+padding-left:10% !important;
+justify-content: left !important;
+}
+
+.homepage-name{
+    text-align: left;
+    padding-left: 10%;
+    font-size: 1.35em;
+}
+
+.homepage-title h1{
+    font-size: 15vw !important;
+    line-height: 14vw !important;
+    letter-spacing: -1px !important;
+    word-spacing: 0px !important;
+    padding-left: 15% !important;
+}
+
+.app-image, .app-description{
+margin: 0 !important;
+font-size: 24px !important;
+}
+
+.appscreens{
+margin-left:0% !important;
+margin-right:0% !important;
+}
+
+
+}
 :root :where(.wp-block-site-title){font-weight: 700;letter-spacing: -.5px;}
 :root :where(.wp-block-site-title a:where(:not(.wp-element-button))){text-decoration: none;}
 :root :where(.wp-block-site-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}

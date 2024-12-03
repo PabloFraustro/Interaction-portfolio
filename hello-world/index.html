@@ -312,7 +312,7 @@ font-weight: 500;}
 .projects-menu ul{
 width: 15vw !important;
     padding: 20px 10px  !important;
-    background-color: #f2f2f2  !important;
+    background-color: #f3f3f3  !important;
 margin-top:30px !important;
     border: none  !important;
 border-radius: 10px !important;
@@ -337,6 +337,67 @@ vertical-align: text-top;
 
 .mobile{
 display:block !important;
+}
+
+a:not(.contact-btn a):not(.projects-banner a):not(.animation-banner a):hover:after, .projects-menu button:not(.projects-menu ul):hover:after { 
+  width: 0%; 
+  left: 0; 
+}
+
+.projects-menu ul{
+width: 100vw !important;
+    padding: 20px 10px  !important;
+height: 100vh !important;
+    background-color: #f3f3f3  !important;
+margin-top:30px !important;
+    border: none  !important;
+border-radius: 0px !important;
+box-shadow: none;
+}
+
+
+.menu{
+font-size:24px !important;
+    padding-top: 0% !important;
+    padding-right: 9% !important;
+justify-content:flex-end !important;
+}
+
+.wp-container-core-navigation-is-layout-1 {
+    justify-content: flex-end !important;
+}
+
+.projects-menu button{
+display: none !important;
+}
+
+.projects-menu li,.home-link{
+padding-bottom: 20px !important;
+}
+
+
+.projects-menu ul{
+padding-left: 10% !important;
+padding-top:13% !important;
+}
+
+.wp-block-navigation__responsive-container-close svg, .wp-block-navigation__responsive-container-open svg {
+    fill: currentColor;
+    display: block;
+    height: 50px;
+    pointer-events: none;
+    width: 50px;
+}
+
+.wp-block-navigation__responsive-container-close {
+    position: absolute;
+    right: 9%;
+    top: 4%;
+    z-index: 2;
+}
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
+    background-color: #f3f3f3;
 }
 
 .elementor-54 .elementor-element.elementor-element-26129df > .elementor-widget-container{
@@ -546,12 +607,12 @@ margin: 0 !important;}
 								<ul class="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation">
 <li class=" wp-block-navigation-item home-link wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/"><span class="wp-block-navigation-item__label"><img decoding="async" width="25" height="24" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo.png" alt="Pablo Fraustro"></span></a></li>
 <li data-wp-context="{ &quot;submenuOpenedBy&quot;: { &quot;click&quot;: false, &quot;hover&quot;: false, &quot;focus&quot;: false }, &quot;type&quot;: &quot;submenu&quot; }" data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on-async--mouseenter="actions.openMenuOnHover" data-wp-on-async--mouseleave="actions.closeMenuOnHover" data-wp-watch="callbacks.initMenu" tabindex="-1" class=" wp-block-navigation-item has-child open-on-hover-click projects-menu wp-block-navigation-submenu">
-<a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/cixi/">PROJECTS</a><button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on-async--click="actions.toggleMenuOnClick" aria-label="PROJECTS submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul data-wp-on-async--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container has-text-color has-contrast-color has-background has-base-background-color projects-menu wp-block-navigation-submenu">
+<a class="wp-block-navigation-item__content" href="http://PROJECTS/">PROJECTS</a><button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on-async--click="actions.toggleMenuOnClick" aria-label="PROJECTS submenu" class="wp-block-navigation__submenu-icon wp-block-navigation-submenu__toggle"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></button><ul data-wp-on-async--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container has-text-color has-contrast-color has-background has-base-background-color projects-menu wp-block-navigation-submenu">
+<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/baxter/"><span class="wp-block-navigation-item__label">BAXTER</span></a></li>
 <li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/cixi/"><span class="wp-block-navigation-item__label">CIXI</span></a></li>
 <li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/diorama/"><span class="wp-block-navigation-item__label">DIORAMA</span></a></li>
 <li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/lexus/"><span class="wp-block-navigation-item__label">LEXUS</span></a></li>
 <li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/vr-hand-rehab/"><span class="wp-block-navigation-item__label">VR HAND REHAB</span></a></li>
-<li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/baxter/"><span class="wp-block-navigation-item__label">BAXTER</span></a></li>
 </ul>
 </li>
 </ul>

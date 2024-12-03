@@ -313,7 +313,7 @@ font-weight: 500;}
 .projects-menu ul{
 width: 15vw !important;
     padding: 20px 10px  !important;
-    background-color: #f2f2f2  !important;
+    background-color: #f3f3f3  !important;
 margin-top:30px !important;
     border: none  !important;
 border-radius: 10px !important;
@@ -338,6 +338,67 @@ vertical-align: text-top;
 
 .mobile{
 display:block !important;
+}
+
+a:not(.contact-btn a):not(.projects-banner a):not(.animation-banner a):hover:after, .projects-menu button:not(.projects-menu ul):hover:after { 
+  width: 0%; 
+  left: 0; 
+}
+
+.projects-menu ul{
+width: 100vw !important;
+    padding: 20px 10px  !important;
+height: 100vh !important;
+    background-color: #f3f3f3  !important;
+margin-top:30px !important;
+    border: none  !important;
+border-radius: 0px !important;
+box-shadow: none;
+}
+
+
+.menu{
+font-size:24px !important;
+    padding-top: 0% !important;
+    padding-right: 9% !important;
+justify-content:flex-end !important;
+}
+
+.wp-container-core-navigation-is-layout-1 {
+    justify-content: flex-end !important;
+}
+
+.projects-menu button{
+display: none !important;
+}
+
+.projects-menu li,.home-link{
+padding-bottom: 20px !important;
+}
+
+
+.projects-menu ul{
+padding-left: 10% !important;
+padding-top:13% !important;
+}
+
+.wp-block-navigation__responsive-container-close svg, .wp-block-navigation__responsive-container-open svg {
+    fill: currentColor;
+    display: block;
+    height: 50px;
+    pointer-events: none;
+    width: 50px;
+}
+
+.wp-block-navigation__responsive-container-close {
+    position: absolute;
+    right: 9%;
+    top: 4%;
+    z-index: 2;
+}
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
+    background-color: #f3f3f3;
 }
 
 .elementor-54 .elementor-element.elementor-element-26129df > .elementor-widget-container{
@@ -541,11 +602,11 @@ margin: 0 !important;}
 <li class="has-custom-4-font-size wp-block-navigation-item home-link wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/"><span class="wp-block-navigation-item__label"><img width="25" height="24" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo.png" alt="Pablo Fraustro"></span></a></li>
 <li data-wp-context="{ &quot;submenuOpenedBy&quot;: { &quot;click&quot;: false, &quot;hover&quot;: false, &quot;focus&quot;: false }, &quot;type&quot;: &quot;submenu&quot; }" data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-watch="callbacks.initMenu" tabindex="-1" class="has-custom-4-font-size wp-block-navigation-item has-child open-on-click projects-menu wp-block-navigation-submenu">
 <button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on-async--click="actions.toggleMenuOnClick" aria-label="PROJECTS submenu" class="wp-block-navigation-item__content wp-block-navigation-submenu__toggle current-menu-ancestor"><span class="wp-block-navigation-item__label">PROJECTS</span></button><span class="wp-block-navigation__submenu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></span><ul data-wp-on-async--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container projects-menu wp-block-navigation-submenu">
+<li class="has-custom-4-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/baxter/"><span class="wp-block-navigation-item__label">BAXTER</span></a></li>
 <li class="has-custom-4-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/cixi/"><span class="wp-block-navigation-item__label">CIXI</span></a></li>
 <li class="has-custom-4-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/diorama/"><span class="wp-block-navigation-item__label">DIORAMA</span></a></li>
 <li class="has-custom-4-font-size wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/lexus/" aria-current="page"><span class="wp-block-navigation-item__label">LEXUS</span></a></li>
 <li class="has-custom-4-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/vr-hand-rehab/"><span class="wp-block-navigation-item__label">VR HAND REHAB</span></a></li>
-<li class="has-custom-4-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/baxter/"><span class="wp-block-navigation-item__label">BAXTER</span></a></li>
 </ul>
 </li>
 </ul>
@@ -623,7 +684,7 @@ margin: 0 !important;}
 
 <script>document.addEventListener("DOMContentLoaded", function() {
 	
-
+if(window.innerWidth > 780){
 const cursor = new MouseFollower({
   container: document.body,
   el: null, 
@@ -676,8 +737,9 @@ el.addEventListener('mouseleave', () => {
       })
 
   });
-
-    if (window.gsap && window.ScrollTrigger) {
+}
+	
+ if (window.gsap && window.ScrollTrigger) {
         gsap.registerPlugin(ScrollTrigger);
         my_stuff();
     } else {
@@ -689,7 +751,6 @@ function my_stuff() {
 	
 //sticky menu
 var actionNav = gsap.to('.menu', {y:'-=60', duration:0.5, ease:'power2.in', paused:true});
-
 
 ScrollTrigger.create({
   trigger: ".menu",
@@ -812,7 +873,7 @@ gsap.to(".fadeinscreens", {
 </div>
 
 <footer class="wp-block-template-part">
-<div class="wp-block-group page-footer is-layout-flow wp-container-core-group-is-layout-9 wp-block-group-is-layout-flow" style="padding-top:150px;padding-right:20%;padding-bottom:var(--wp--preset--spacing--50);padding-left:20%">
+<div class="wp-block-group page-footer is-layout-flow wp-container-core-group-is-layout-9 wp-block-group-is-layout-flow" style="padding-top:150px;padding-right:20%;padding-bottom:var(--wp--preset--spacing--60);padding-left:20%">
 <div class="wp-block-group scroll-next is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-6 wp-block-group-is-layout-flex" style="padding-right:0;padding-bottom:150px;padding-left:0">
 <p class="fadeout-after has-contrast-color has-text-color has-link-color has-custom-2-font-size wp-elements-d2feaf746d85e9645f857ae189fe124c wp-container-content-5" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--50);font-style:normal;font-weight:300"><a href="#">SCROLL TO TOP</a></p>
 

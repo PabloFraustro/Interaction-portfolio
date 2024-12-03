@@ -4,3 +4,4 @@
 2024/11/27 11:45:03 [alert] 1152#0: *4236 setsockopt(TCP_NODELAY) failed (22: Invalid argument) while keepalive, client: ::1, server: [::1]:10014
 2024/11/30 11:27:53 [alert] 2024#0: *9149 setsockopt(TCP_NODELAY) failed (22: Invalid argument) while keepalive, client: ::1, server: [::1]:10014
 2024/11/30 22:32:19 [alert] 2024#0: *14330 setsockopt(TCP_NODELAY) failed (22: Invalid argument) while keepalive, client: ::1, server: [::1]:10014
+2024/12/02 13:26:20 [alert] 25366#0: *4485 setsockopt(TCP_NODELAY) failed (22: Invalid argument) while keepalive, client: ::1, server: [::1]:10014

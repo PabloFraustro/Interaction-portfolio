@@ -166,13 +166,71 @@ nav{
 }
 
 .menu{
-  background-color: #F3F3F3;
+    background-color: #F3F3F3;}
 
-}
+.wp-block-navigation__submenu-icon{
+display:none !important;}
 
 a{
 text-decoration:none;
 }
+
+a:focus {
+    outline: none !important;
+}
+
+a, .projects-menu button {
+  text-decoration: none;  
+  display: inline-block;
+  position: relative;
+}
+
+
+.page-id-54 a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+
+a:not(.contact-btn a):not(.projects-banner a):not(.animation-banner a):hover:after, .projects-menu button:not(.projects-menu ul):hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+a:not(.page-id-54 a):after,  .projects-menu button:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+
+.wp-block-navigation-link a:hover{
+text-decoration: none !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+
+.home-link{
+padding:30px !important;}
 
 
 .dot {
@@ -278,13 +336,6 @@ opacity:0;
  transition: opacity .5s ;
 }
 
-a{
-transition: opacity .1s ease-in;
-}
-a:hover{
-opacity:.8;
-}
-
 .carrousel {
 	width:fit-content;
 	display:flex;
@@ -321,10 +372,50 @@ display: none !important;
   .fade-banner {
     animation: fadeIn 1s ease;
   }
+.page-id-2503 .next{
+display: none !important;}
+
+.page-id-2503 .scroll-next{
+    padding-top: 0!important;
+    padding-bottom: 80px !important;
+justify-content: left !important;
+}
 
 .mobile{
 display: none !important;
 }
+
+.wp-block-navigation-link{
+background: none !important;
+}
+.projects-menu button{
+font-weight: 400;
+}
+.projects-menu button:focus{
+font-weight: 500;}
+
+.projects-menu ul{
+width: 15vw !important;
+    padding: 20px 10px  !important;
+    background-color: #f2f2f2  !important;
+margin-top:30px !important;
+    border: none  !important;
+border-radius: 10px !important;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.big:before, .big:after{
+ transform:scale(1.4) !important;
+opacity: 1 !important;
+}
+
+
+.hover-text-content{
+font-weight: 400;
+padding-left:30px;
+vertical-align: text-top;
+}
+
 
 /* responsive */
 @media only screen and (max-width: 780px) {
@@ -439,14 +530,14 @@ margin-right:0% !important;
 
 .banner-video{
 margin: 0 !important;}
-
-
 }
+
+/* end responsive */
 :root :where(.wp-block-post-navigation-link){font-size: var(--wp--preset--font-size--medium);}
 :root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--medium);}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){text-decoration: underline;}</style>
-<style id="core-block-supports-inline-css">.wp-container-core-navigation-is-layout-1{flex-wrap:nowrap;gap:0;justify-content:space-between;}.wp-container-core-group-is-layout-1 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-1 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-2{top:calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));position:sticky;z-index:10;}.wp-container-content-1{grid-column:span 1;grid-row:span 1;}.wp-container-content-2{grid-column:span 2;grid-row:span 1;}.wp-container-core-group-is-layout-2{grid-template-columns:repeat(5, minmax(0, 1fr));gap:20px;}.wp-block-gallery.wp-block-gallery-3{--wp--style--unstable-gallery-gap:20px;gap:var(--wp--preset--spacing--30) 20px;}.wp-elements-d2feaf746d85e9645f857ae189fe124c a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-3{flex-basis:400px;}.wp-container-content-4{flex-basis:25%;}.wp-elements-28667a969655ab83ea200de367654150 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-6{flex-basis:5%;}.wp-container-core-group-is-layout-3{flex-wrap:nowrap;}.wp-container-core-group-is-layout-4{gap:0px;flex-direction:column;align-items:flex-start;}.wp-container-content-7{flex-basis:5%;}.wp-container-core-group-is-layout-5{flex-wrap:nowrap;justify-content:center;align-items:flex-start;}.wp-container-core-group-is-layout-6{flex-wrap:nowrap;}.wp-container-core-group-is-layout-7{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-8 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-8 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-is-layout-9{flex-wrap:nowrap;}</style>
+<style id="core-block-supports-inline-css">.wp-container-core-navigation-is-layout-1{flex-wrap:nowrap;gap:0;justify-content:space-between;}.wp-container-core-group-is-layout-1 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-1 > * + *{margin-block-start:0;margin-block-end:0;}.wp-container-2{top:calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));position:sticky;z-index:10;}.wp-container-content-2{grid-column:span 1;grid-row:span 1;}.wp-container-content-3{grid-column:span 2;grid-row:span 1;}.wp-container-core-group-is-layout-2{grid-template-columns:repeat(5, minmax(0, 1fr));gap:20px;}.wp-block-gallery.wp-block-gallery-3{--wp--style--unstable-gallery-gap:20px;gap:var(--wp--preset--spacing--30) 20px;}.wp-elements-d2feaf746d85e9645f857ae189fe124c a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-4{flex-basis:400px;}.wp-container-content-5{flex-basis:25%;}.wp-elements-28667a969655ab83ea200de367654150 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-7{flex-basis:5%;}.wp-container-core-group-is-layout-3{flex-wrap:nowrap;}.wp-container-core-group-is-layout-4{gap:0px;flex-direction:column;align-items:flex-start;}.wp-container-content-8{flex-basis:5%;}.wp-container-core-group-is-layout-5{flex-wrap:nowrap;justify-content:center;align-items:flex-start;}.wp-container-core-group-is-layout-6{flex-wrap:nowrap;}.wp-container-core-group-is-layout-7{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-8 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-8 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-is-layout-9{flex-wrap:nowrap;}</style>
 <style id="wp-block-template-skip-link-inline-css">.skip-link.screen-reader-text {
 			border: 0;
 			clip: rect(1px,1px,1px,1px);
@@ -523,9 +614,13 @@ margin: 0 !important;}
 @font-face{font-family:GT-Walsheim;font-style:normal;font-weight:400;font-display:fallback;src:url('https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/GT-Walsheim-Regular-Trial.otf') format('opentype');}
 @font-face{font-family:GT-Walsheim;font-style:normal;font-weight:500;font-display:fallback;src:url('https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/GT-Walsheim-Medium-Trial.otf') format('opentype');}
 @font-face{font-family:GT-Walsheim;font-style:normal;font-weight:700;font-display:fallback;src:url('https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/GT-Walsheim-Bold-Trial.otf') format('opentype');}</style>
+<link rel="icon" href="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo.png" sizes="32x32">
+<link rel="icon" href="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo.png">
+<meta name="msapplication-TileImage" content="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo.png">
 </head>
 
-<body class="page-template-default page page-id-2206 page-child parent-pageid-1725 wp-embed-responsive elementor-default elementor-kit-110">
+<body class="page-template-default page page-id-2206 page-child parent-pageid-1725 wp-custom-logo wp-embed-responsive elementor-default elementor-kit-110">
 
 <div class="wp-site-blocks">
 <div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
@@ -539,12 +634,10 @@ margin: 0 !important;}
 							<button aria-label="Close menu" class="wp-block-navigation__responsive-container-close" data-wp-on-async--click="actions.closeMenuOnClick"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg></button>
 							<div class="wp-block-navigation__responsive-container-content" data-wp-watch="callbacks.focusFirstElement" id="modal-1-content">
 								<ul style="font-style:normal;font-weight:400;" class="wp-block-navigation__container has-custom-4-font-size is-responsive items-justified-space-between no-wrap wp-block-navigation has-custom-4-font-size">
-<li class="has-custom-4-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/"><span class="wp-block-navigation-item__label">PABLO FRAUSTRO</span></a></li>
-<li data-wp-context="{ &quot;submenuOpenedBy&quot;: { &quot;click&quot;: false, &quot;hover&quot;: false, &quot;focus&quot;: false }, &quot;type&quot;: &quot;submenu&quot; }" data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-on-async--mouseenter="actions.openMenuOnHover" data-wp-on-async--mouseleave="actions.closeMenuOnHover" data-wp-watch="callbacks.initMenu" tabindex="-1" class="has-custom-4-font-size wp-block-navigation-item has-child wp-block-navigation-submenu">
-<a class="wp-block-navigation-item__content current-menu-ancestor" href="https://pablo-designportfolio.netlify.app/cixi/">PROJECTS</a><ul class="wp-block-navigation__submenu-container wp-block-navigation-submenu">
-<li class="has-custom-4-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/cixi/design-research/"><span class="wp-block-navigation-item__label">DESIGN RESEARCH</span></a></li>
-<li class="has-custom-4-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/cixi/activepilotapp-ui-ux/"><span class="wp-block-navigation-item__label">ACTIVE PILOT APP UI/UX</span></a></li>
-<li class="has-custom-4-font-size wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/cixi/branding-through-motion-design/" aria-current="page"><span class="wp-block-navigation-item__label">BRANDING THROUGH MOTION DESIGN</span></a></li>
+<li class="has-custom-4-font-size wp-block-navigation-item home-link wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/"><span class="wp-block-navigation-item__label"><img loading="lazy" width="25" height="24" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo.png" alt="Pablo Fraustro"></span></a></li>
+<li data-wp-context="{ &quot;submenuOpenedBy&quot;: { &quot;click&quot;: false, &quot;hover&quot;: false, &quot;focus&quot;: false }, &quot;type&quot;: &quot;submenu&quot; }" data-wp-interactive="core/navigation" data-wp-on--focusout="actions.handleMenuFocusout" data-wp-on--keydown="actions.handleMenuKeydown" data-wp-watch="callbacks.initMenu" tabindex="-1" class="has-custom-4-font-size wp-block-navigation-item has-child open-on-click projects-menu wp-block-navigation-submenu">
+<button data-wp-bind--aria-expanded="state.isMenuOpen" data-wp-on-async--click="actions.toggleMenuOnClick" aria-label="PROJECTS submenu" class="wp-block-navigation-item__content wp-block-navigation-submenu__toggle"><span class="wp-block-navigation-item__label">PROJECTS</span></button><span class="wp-block-navigation__submenu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" fill="none" aria-hidden="true" focusable="false"><path d="M1.50002 4L6.00002 8L10.5 4" stroke-width="1.5"></path></svg></span><ul data-wp-on-async--focus="actions.openMenuOnFocus" class="wp-block-navigation__submenu-container projects-menu wp-block-navigation-submenu">
+<li class="has-custom-4-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/cixi/"><span class="wp-block-navigation-item__label">CIXI</span></a></li>
 <li class="has-custom-4-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/diorama/"><span class="wp-block-navigation-item__label">DIORAMA</span></a></li>
 <li class="has-custom-4-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/lexus/"><span class="wp-block-navigation-item__label">LEXUS</span></a></li>
 <li class="has-custom-4-font-size wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content" href="https://pablo-designportfolio.netlify.app/vr-hand-rehab/"><span class="wp-block-navigation-item__label">VR HAND REHAB</span></a></li>
@@ -564,11 +657,11 @@ margin: 0 !important;}
 
 
 
-<p class="has-text-align-left fade-banner page-title has-custom-2-font-size wp-container-content-1" style="padding-top:100px;padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);font-style:normal;font-weight:300">BRANDING THROUGH MOTION DESIGN</p>
+<p class="has-text-align-left fade-banner page-title has-custom-2-font-size wp-container-content-2" style="padding-top:100px;padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40);font-style:normal;font-weight:300">BRANDING THROUGH MOTION DESIGN</p>
 
 
 
-<p class="has-text-align-left fade-banner page-description has-custom-5-font-size wp-container-content-2" style="padding-top:90px;font-style:normal;font-weight:400">A collection of projects I helped CIXI bring to life, proposing new graphical and communicational channels.</p>
+<p class="has-text-align-left fade-banner page-description has-custom-5-font-size wp-container-content-3" style="padding-top:90px;font-style:normal;font-weight:400">A collection of projects I helped CIXI bring to life, proposing new graphical and communicational channels.</p>
 
 
 
@@ -601,19 +694,19 @@ margin: 0 !important;}
 
 
 <figure class="wp-block-gallery has-nested-images columns-2 is-cropped wp-block-gallery-3 is-layout-flex wp-block-gallery-is-layout-flex" style="padding-top:var(--wp--preset--spacing--80);padding-right:10%;padding-bottom:var(--wp--preset--spacing--80);padding-left:10%">
-<figure class="wp-block-image size-full fadeout-after"><img fetchpriority="high" decoding="async" width="1920" height="1080" data-id="23" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/people_2.png" alt="CIXI content gallery" class="wp-image-23" srcset="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/people_2.png 1920w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/people_2-300x169.png 300w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/people_2-1024x576.png 1024w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/people_2-768x432.png 768w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/people_2-1536x864.png 1536w" sizes="(max-width: 1920px) 100vw, 1920px"></figure>
+<figure class="wp-block-image size-full has-custom-border fadeout-after"><img fetchpriority="high" decoding="async" width="1920" height="1080" data-id="23" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/people_2.png" alt="CIXI content gallery" class="wp-image-23" style="border-radius:10px" srcset="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/people_2.png 1920w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/people_2-300x169.png 300w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/people_2-1024x576.png 1024w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/people_2-768x432.png 768w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/people_2-1536x864.png 1536w" sizes="(max-width: 1920px) 100vw, 1920px"></figure>
 
 
 
-<figure class="wp-block-image size-full fadeout-after"><img decoding="async" width="1920" height="1080" data-id="22" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/4.png" alt="CIXI content gallery 2" class="wp-image-22" srcset="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/4.png 1920w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/4-300x169.png 300w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/4-1024x576.png 1024w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/4-768x432.png 768w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/4-1536x864.png 1536w" sizes="(max-width: 1920px) 100vw, 1920px"></figure>
+<figure class="wp-block-image size-full has-custom-border fadeout-after"><img decoding="async" width="1920" height="1080" data-id="22" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/4.png" alt="CIXI content gallery 2" class="wp-image-22" style="border-radius:10px" srcset="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/4.png 1920w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/4-300x169.png 300w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/4-1024x576.png 1024w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/4-768x432.png 768w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/4-1536x864.png 1536w" sizes="(max-width: 1920px) 100vw, 1920px"></figure>
 
 
 
-<figure class="wp-block-image size-full fadeout-after"><img decoding="async" width="1920" height="1080" data-id="21" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3.png" alt="CIXI content gallery 3" class="wp-image-21" srcset="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3.png 1920w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-300x169.png 300w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-1024x576.png 1024w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-768x432.png 768w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-1536x864.png 1536w" sizes="(max-width: 1920px) 100vw, 1920px"></figure>
+<figure class="wp-block-image size-full has-custom-border fadeout-after"><img decoding="async" width="1920" height="1080" data-id="21" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3.png" alt="CIXI content gallery 3" class="wp-image-21" style="border-radius:10px" srcset="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3.png 1920w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-300x169.png 300w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-1024x576.png 1024w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-768x432.png 768w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-1536x864.png 1536w" sizes="(max-width: 1920px) 100vw, 1920px"></figure>
 
 
 
-<figure class="wp-block-image size-full fadeout-after"><img loading="lazy" decoding="async" width="1920" height="1080" data-id="20" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/2.png" alt="CIXI content gallery 4" class="wp-image-20" srcset="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/2.png 1920w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/2-300x169.png 300w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/2-1024x576.png 1024w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/2-768x432.png 768w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/2-1536x864.png 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px"></figure>
+<figure class="wp-block-image size-full has-custom-border fadeout-after"><img loading="lazy" decoding="async" width="1920" height="1080" data-id="20" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/2.png" alt="CIXI content gallery 4" class="wp-image-20" style="border-radius:10px" srcset="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/2.png 1920w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/2-300x169.png 300w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/2-1024x576.png 1024w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/2-768x432.png 768w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/2-1536x864.png 1536w" sizes="auto, (max-width: 1920px) 100vw, 1920px"></figure>
 </figure>
 
 
@@ -641,10 +734,68 @@ margin: 0 !important;}
 		
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-<script>document.addEventListener("DOMContentLoaded", function() {
+<link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+<script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+	
+
+const cursor = new MouseFollower({
+  container: document.body,
+  el: null, 
+  stickDelta: 0.20,
+	    stateDetection: {
+        '-big': '.big',
+    }
+});
+
+const el = document.querySelector('.home-link');
+
+el.addEventListener('mouseenter', () => {
+    cursor.setStick(el);
+	cursor.addState("big");
+	cursor.setText('<img loading="lazy" loading="lazy" width="25" height="24" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo-white.png" class="custom-logo" alt="Pablo Fraustro" decoding="async">');
+	const hoverText = document.createElement('span');
+    hoverText.textContent = " PABLO FRAUSTRO"; // Add your text here
+    hoverText.classList.add('hover-text-content'); // Add a class for styling if needed
+
+    // Append the new span inside the hoverElement
+    el.appendChild(hoverText);
+});
+
+el.addEventListener('mouseleave', () => {
+    cursor.removeStick();
+	cursor.removeText();
+	cursor.removeState("big");
+	  const hoverText = el.querySelector('.hover-text-content');
+    if (hoverText) {
+        el.removeChild(hoverText);
+    }
+});
+	
+  const button = document.querySelector('.projects-menu button');
+  const animatedElement = document.querySelectorAll('.projects-menu li');
+
+  button.addEventListener('click', () => {
+    const tl = gsap.timeline();
+    tl.fromTo(animatedElement,
+      {
+        opacity: 0,        
+        y: -10           
+      },
+      {
+        opacity: 1,        
+        y: 0,
+		stagger: 0.1,
+        duration: .5,       
+        ease: "power3.out" 
+      })
+
+  });
+
     if (window.gsap && window.ScrollTrigger) {
         gsap.registerPlugin(ScrollTrigger);
         my_stuff();
@@ -775,18 +926,19 @@ gsap.to(".fadeinscreens", {
   }
 });
 
-}</script>
+}
+</script>
 
 </div>
 
 <footer class="wp-block-template-part">
 <div class="wp-block-group page-footer is-layout-flow wp-container-core-group-is-layout-8 wp-block-group-is-layout-flow" style="padding-top:150px;padding-right:20%;padding-bottom:var(--wp--preset--spacing--50);padding-left:20%">
-<div class="wp-block-group scroll-next is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-5 wp-block-group-is-layout-flex" style="padding-right:0;padding-bottom:180px;padding-left:0">
-<p class="fadeout-after has-contrast-color has-text-color has-link-color has-custom-2-font-size wp-elements-d2feaf746d85e9645f857ae189fe124c wp-container-content-3" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--50);font-style:normal;font-weight:300"><a href="#">SCROLL TO TOP</a></p>
+<div class="wp-block-group scroll-next is-horizontal is-content-justification-center is-nowrap is-layout-flex wp-container-core-group-is-layout-5 wp-block-group-is-layout-flex" style="padding-right:0;padding-bottom:150px;padding-left:0">
+<p class="fadeout-after has-contrast-color has-text-color has-link-color has-custom-2-font-size wp-elements-d2feaf746d85e9645f857ae189fe124c wp-container-content-4" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--50);font-style:normal;font-weight:300"><a href="#">SCROLL TO TOP</a></p>
 
 
 
-<div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer nomobile wp-container-content-4"></div>
+<div style="height:100px;width:0px" aria-hidden="true" class="wp-block-spacer nomobile wp-container-content-5"></div>
 
 
 
@@ -799,13 +951,13 @@ gsap.to(".fadeinscreens", {
 <div class="post-navigation-link-next fadeout-after wp-block-post-navigation-link has-custom-2-font-size"><a href="https://pablo-designportfolio.netlify.app/diorama/" rel="next">DIORAMA</a></div>
 
 
-<div style="height:40%;width:0px" aria-hidden="true" class="wp-block-spacer wp-container-content-6"></div>
+<div style="height:40%;width:0px" aria-hidden="true" class="wp-block-spacer wp-container-content-7"></div>
 </div>
 </div>
 
 
 
-<div style="height:40%;width:0px" aria-hidden="true" class="wp-block-spacer nomobile wp-container-content-7"></div>
+<div style="height:40%;width:0px" aria-hidden="true" class="wp-block-spacer nomobile wp-container-content-8"></div>
 </div>
 
 
@@ -868,9 +1020,9 @@ gsap.to(".fadeinscreens", {
 wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 </script>
 <script id="presto-components-js-extra">var prestoComponents = {"url":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/presto-player\/dist\/components\/web-components\/web-components.esm.js?ver=1732802027"};
-var prestoPlayer = {"plugin_url":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/presto-player\/","logged_in":"","root":"https:\/\/pablo-designportfolio.netlify.app\/wp-json\/","nonce":"50a268d3ac","ajaxurl":"https:\/\/pablo-designportfolio.netlify.app\/wp-admin\/admin-ajax.php","isAdmin":"","isSetup":{"bunny":false},"proVersion":"","isPremium":"","wpVersionString":"wp\/v2\/","prestoVersionString":"presto-player\/v1\/","debug":"","debug_navigator":"","i18n":{"skip":"Skip","rewatch":"Rewatch","emailPlaceholder":"Email address","emailDefaultHeadline":"Enter your email to play this episode.","chapters":"Chapters","show_chapters":"Show Chapters","hide_chapters":"Hide Chapters","restart":"Restart","rewind":"Rewind {seektime}s","play":"Play","pause":"Pause","fastForward":"Forward {seektime}s","seek":"Seek","seekLabel":"{currentTime} of {duration}","played":"Played","buffered":"Buffered","currentTime":"Current time","duration":"Duration","volume":"Volume","mute":"Mute","unmute":"Unmute","enableCaptions":"Enable captions","disableCaptions":"Disable captions","download":"Download","enterFullscreen":"Enter fullscreen","exitFullscreen":"Exit fullscreen","frameTitle":"Player for {title}","captions":"Captions","settings":"Settings","pip":"PIP","menuBack":"Go back to previous menu","speed":"Speed","normal":"Normal","quality":"Quality","loop":"Loop","start":"Start","end":"End","all":"All","reset":"Reset","disabled":"Disabled","enabled":"Enabled","advertisement":"Ad","qualityBadge":{"2160":"4K","1440":"HD","1080":"HD","720":"HD","576":"SD","480":"SD"},"auto":"AUTO","upNext":"Up Next","startOver":"Start Over"}};
+var prestoPlayer = {"plugin_url":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/presto-player\/","logged_in":"","root":"https:\/\/pablo-designportfolio.netlify.app\/wp-json\/","nonce":"9dd9a39ae7","ajaxurl":"https:\/\/pablo-designportfolio.netlify.app\/wp-admin\/admin-ajax.php","isAdmin":"","isSetup":{"bunny":false},"proVersion":"","isPremium":"","wpVersionString":"wp\/v2\/","prestoVersionString":"presto-player\/v1\/","debug":"","debug_navigator":"","i18n":{"skip":"Skip","rewatch":"Rewatch","emailPlaceholder":"Email address","emailDefaultHeadline":"Enter your email to play this episode.","chapters":"Chapters","show_chapters":"Show Chapters","hide_chapters":"Hide Chapters","restart":"Restart","rewind":"Rewind {seektime}s","play":"Play","pause":"Pause","fastForward":"Forward {seektime}s","seek":"Seek","seekLabel":"{currentTime} of {duration}","played":"Played","buffered":"Buffered","currentTime":"Current time","duration":"Duration","volume":"Volume","mute":"Mute","unmute":"Unmute","enableCaptions":"Enable captions","disableCaptions":"Disable captions","download":"Download","enterFullscreen":"Enter fullscreen","exitFullscreen":"Exit fullscreen","frameTitle":"Player for {title}","captions":"Captions","settings":"Settings","pip":"PIP","menuBack":"Go back to previous menu","speed":"Speed","normal":"Normal","quality":"Quality","loop":"Loop","start":"Start","end":"End","all":"All","reset":"Reset","disabled":"Disabled","enabled":"Enabled","advertisement":"Ad","qualityBadge":{"2160":"4K","1440":"HD","1080":"HD","720":"HD","576":"SD","480":"SD"},"auto":"AUTO","upNext":"Up Next","startOver":"Start Over"}};
 var prestoComponents = {"url":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/presto-player\/dist\/components\/web-components\/web-components.esm.js?ver=1732802027"};
-var prestoPlayer = {"plugin_url":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/presto-player\/","logged_in":"","root":"https:\/\/pablo-designportfolio.netlify.app\/wp-json\/","nonce":"50a268d3ac","ajaxurl":"https:\/\/pablo-designportfolio.netlify.app\/wp-admin\/admin-ajax.php","isAdmin":"","isSetup":{"bunny":false},"proVersion":"","isPremium":"","wpVersionString":"wp\/v2\/","prestoVersionString":"presto-player\/v1\/","debug":"","debug_navigator":"","i18n":{"skip":"Skip","rewatch":"Rewatch","emailPlaceholder":"Email address","emailDefaultHeadline":"Enter your email to play this episode.","chapters":"Chapters","show_chapters":"Show Chapters","hide_chapters":"Hide Chapters","restart":"Restart","rewind":"Rewind {seektime}s","play":"Play","pause":"Pause","fastForward":"Forward {seektime}s","seek":"Seek","seekLabel":"{currentTime} of {duration}","played":"Played","buffered":"Buffered","currentTime":"Current time","duration":"Duration","volume":"Volume","mute":"Mute","unmute":"Unmute","enableCaptions":"Enable captions","disableCaptions":"Disable captions","download":"Download","enterFullscreen":"Enter fullscreen","exitFullscreen":"Exit fullscreen","frameTitle":"Player for {title}","captions":"Captions","settings":"Settings","pip":"PIP","menuBack":"Go back to previous menu","speed":"Speed","normal":"Normal","quality":"Quality","loop":"Loop","start":"Start","end":"End","all":"All","reset":"Reset","disabled":"Disabled","enabled":"Enabled","advertisement":"Ad","qualityBadge":{"2160":"4K","1440":"HD","1080":"HD","720":"HD","576":"SD","480":"SD"},"auto":"AUTO","upNext":"Up Next","startOver":"Start Over"}};</script>
+var prestoPlayer = {"plugin_url":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/presto-player\/","logged_in":"","root":"https:\/\/pablo-designportfolio.netlify.app\/wp-json\/","nonce":"9dd9a39ae7","ajaxurl":"https:\/\/pablo-designportfolio.netlify.app\/wp-admin\/admin-ajax.php","isAdmin":"","isSetup":{"bunny":false},"proVersion":"","isPremium":"","wpVersionString":"wp\/v2\/","prestoVersionString":"presto-player\/v1\/","debug":"","debug_navigator":"","i18n":{"skip":"Skip","rewatch":"Rewatch","emailPlaceholder":"Email address","emailDefaultHeadline":"Enter your email to play this episode.","chapters":"Chapters","show_chapters":"Show Chapters","hide_chapters":"Hide Chapters","restart":"Restart","rewind":"Rewind {seektime}s","play":"Play","pause":"Pause","fastForward":"Forward {seektime}s","seek":"Seek","seekLabel":"{currentTime} of {duration}","played":"Played","buffered":"Buffered","currentTime":"Current time","duration":"Duration","volume":"Volume","mute":"Mute","unmute":"Unmute","enableCaptions":"Enable captions","disableCaptions":"Disable captions","download":"Download","enterFullscreen":"Enter fullscreen","exitFullscreen":"Exit fullscreen","frameTitle":"Player for {title}","captions":"Captions","settings":"Settings","pip":"PIP","menuBack":"Go back to previous menu","speed":"Speed","normal":"Normal","quality":"Quality","loop":"Loop","start":"Start","end":"End","all":"All","reset":"Reset","disabled":"Disabled","enabled":"Enabled","advertisement":"Ad","qualityBadge":{"2160":"4K","1440":"HD","1080":"HD","720":"HD","576":"SD","480":"SD"},"auto":"AUTO","upNext":"Up Next","startOver":"Start Over"}};</script>
 <script src="https://pablo-designportfolio.netlify.app/wp-content/plugins/presto-player/src/player/player-static.js?ver=1732802027" type="module" defer></script><script id="wp-block-template-skip-link-js-after">( function() {
 		var skipLinkTarget = document.querySelector( 'main' ),
 			sibling,

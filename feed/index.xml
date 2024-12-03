@@ -19,6 +19,14 @@
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.7.1</generator>
+
+<image>
+	<url>https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo.png</url>
+	<title>Pablo Fraustro</title>
+	<link>https://pablo-designportfolio.netlify.app/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
 	<item>
 		<title>Hello world!</title>
 		<link>https://pablo-designportfolio.netlify.app/hello-world/</link>

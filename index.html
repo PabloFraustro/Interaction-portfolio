@@ -15,7 +15,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"🏳️‍⚧️","🏳️​⚧️")?!1:!n(e,"🇺🇳","🇺​🇳")&&!n(e,"🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!n(e,"🐦‍⬛","🐦​⬛")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
 </script>
 <link rel="stylesheet" id="elementor-frontend-css" href="https://pablo-designportfolio.netlify.app/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.25.10" media="all">
-<link rel="stylesheet" id="elementor-post-54-css" href="https://pablo-designportfolio.netlify.app/wp-content/uploads/elementor/css/post-54.css?ver=1733050191" media="all">
+<link rel="stylesheet" id="elementor-post-54-css" href="https://pablo-designportfolio.netlify.app/wp-content/uploads/elementor/css/post-54.css?ver=1733235762" media="all">
 <style id="wp-block-post-content-inline-css">.wp-block-post-content{display:flow-root}</style>
 <style id="wp-block-paragraph-inline-css">.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}</style>
 <style id="wp-block-group-inline-css">.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}</style>
@@ -82,13 +82,71 @@ nav{
 }
 
 .menu{
-  background-color: #F3F3F3;
+    background-color: #F3F3F3;}
 
-}
+.wp-block-navigation__submenu-icon{
+display:none !important;}
 
 a{
 text-decoration:none;
 }
+
+a:focus {
+    outline: none !important;
+}
+
+a, .projects-menu button {
+  text-decoration: none;  
+  display: inline-block;
+  position: relative;
+}
+
+
+.page-id-54 a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+
+a:not(.contact-btn a):not(.projects-banner a):not(.animation-banner a):hover:after, .projects-menu button:not(.projects-menu ul):hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+a:not(.page-id-54 a):after,  .projects-menu button:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+
+.wp-block-navigation-link a:hover{
+text-decoration: none !important;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+
+.home-link{
+padding:30px !important;}
 
 
 .dot {
@@ -194,13 +252,6 @@ opacity:0;
  transition: opacity .5s ;
 }
 
-a{
-transition: opacity .1s ease-in;
-}
-a:hover{
-opacity:.8;
-}
-
 .carrousel {
 	width:fit-content;
 	display:flex;
@@ -237,10 +288,50 @@ display: none !important;
   .fade-banner {
     animation: fadeIn 1s ease;
   }
+.page-id-2503 .next{
+display: none !important;}
+
+.page-id-2503 .scroll-next{
+    padding-top: 0!important;
+    padding-bottom: 80px !important;
+justify-content: left !important;
+}
 
 .mobile{
 display: none !important;
 }
+
+.wp-block-navigation-link{
+background: none !important;
+}
+.projects-menu button{
+font-weight: 400;
+}
+.projects-menu button:focus{
+font-weight: 500;}
+
+.projects-menu ul{
+width: 15vw !important;
+    padding: 20px 10px  !important;
+    background-color: #f2f2f2  !important;
+margin-top:30px !important;
+    border: none  !important;
+border-radius: 10px !important;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.big:before, .big:after{
+ transform:scale(1.4) !important;
+opacity: 1 !important;
+}
+
+
+.hover-text-content{
+font-weight: 400;
+padding-left:30px;
+vertical-align: text-top;
+}
+
 
 /* responsive */
 @media only screen and (max-width: 780px) {
@@ -355,10 +446,10 @@ margin-right:0% !important;
 
 .banner-video{
 margin: 0 !important;}
+}
 
-
-}</style>
-<style id="core-block-supports-inline-css">.wp-elements-4599e7cbd86ba5e0c1a66efacb611635 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--base);}.wp-elements-d2adf9f88b7f4a595311e766cf819ba3 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--base);}.wp-container-core-group-is-layout-1{flex-wrap:nowrap;}.wp-container-core-group-is-layout-2{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-3 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-3 > * + *{margin-block-start:0px;margin-block-end:0;}</style>
+/* end responsive */</style>
+<style id="core-block-supports-inline-css">.wp-elements-469f9f9b8f3de467fad73b3274107dd1 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--base);}.wp-elements-d2adf9f88b7f4a595311e766cf819ba3 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--base);}.wp-container-core-group-is-layout-1{flex-wrap:nowrap;}.wp-container-core-group-is-layout-2{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-is-layout-3 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-3 > * + *{margin-block-start:0px;margin-block-end:0;}</style>
 <style id="wp-block-template-skip-link-inline-css">.skip-link.screen-reader-text {
 			border: 0;
 			clip: rect(1px,1px,1px,1px);
@@ -426,27 +517,31 @@ margin: 0 !important;}
 @font-face{font-family:GT-Walsheim;font-style:normal;font-weight:400;font-display:fallback;src:url('https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/GT-Walsheim-Regular-Trial.otf') format('opentype');}
 @font-face{font-family:GT-Walsheim;font-style:normal;font-weight:500;font-display:fallback;src:url('https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/GT-Walsheim-Medium-Trial.otf') format('opentype');}
 @font-face{font-family:GT-Walsheim;font-style:normal;font-weight:700;font-display:fallback;src:url('https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/GT-Walsheim-Bold-Trial.otf') format('opentype');}</style>
+<link rel="icon" href="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo.png" sizes="32x32">
+<link rel="icon" href="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo.png">
+<meta name="msapplication-TileImage" content="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/12/logo.png">
 </head>
 
-<body class="home page-template-default page page-id-54 wp-embed-responsive elementor-default elementor-kit-110 elementor-page elementor-page-54">
+<body class="home page-template-default page page-id-54 wp-custom-logo wp-embed-responsive elementor-default elementor-kit-110 elementor-page elementor-page-54">
 
 <div class="wp-site-blocks">
 <div class="entry-content wp-block-post-content is-layout-flow wp-block-post-content-is-layout-flow">		<div data-elementor-type="wp-page" data-elementor-id="54" class="elementor elementor-54">
 				<div class="elementor-element elementor-element-1b3a04b1 e-flex e-con-boxed e-con e-parent" data-id="1b3a04b1" data-element_type="container" id="Intro-and-projects" data-settings="{&quot;_ob_use_container_extras&quot;:&quot;no&quot;,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-f4f3613 e-con-full e-flex e-con e-child" data-id="f4f3613" data-element_type="container" data-settings="{&quot;_ob_use_container_extras&quot;:&quot;no&quot;,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
-				<div class="elementor-element elementor-element-0f37992 elementor-widget__width-initial homepage-name ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="0f37992" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-0f37992 elementor-widget__width-initial fade-banner homepage-name ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="0f37992" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 							<p>PABLO FRAUSTRO</p>						</div>
 				</div>
 		<div class="elementor-element elementor-element-64ac3bd e-con-full e-flex e-con e-child" data-id="64ac3bd" data-element_type="container" data-settings="{&quot;_ob_use_container_extras&quot;:&quot;no&quot;,&quot;_ob_column_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_glider_is_slider&quot;:&quot;no&quot;,&quot;_ob_column_has_pseudo&quot;:&quot;no&quot;}">
-				<div class="elementor-element elementor-element-b73ccf9 elementor-widget__width-auto fade homepage-title ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="b73ccf9" data-element_type="widget" data-settings="{&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-b73ccf9 elementor-widget__width-auto fade-banner fade homepage-title ob-has-background-overlay elementor-widget elementor-widget-heading" data-id="b73ccf9" data-element_type="widget" data-settings="{&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<h1 class="elementor-heading-title elementor-size-default">Design,
 Code &amp;
 Creativity</h1>		</div>
 				</div>
-				<div class="elementor-element elementor-element-26129df homepage-description fade page-center-txt ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="26129df" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-26129df fade-banner homepage-description fade page-center-txt ob-harakiri-inherit ob-has-background-overlay elementor-widget elementor-widget-text-editor" data-id="26129df" data-element_type="widget" data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 							<p><span style="white-space-collapse: preserve;">Hola! I’m Pablo, an interaction and motion designer who uses empathy and creativity to elevate brands. </span></p>						</div>
 				</div>
@@ -456,10 +551,9 @@ Creativity</h1>		</div>
 				<div class="elementor-widget-container">
 			<div class="projects-title" style="color:white">
     <h2 class="appear">
-<span class="dot"></span>RECENT WORKS <span style="font-size:12px"> SCROLL</span>
-</h2>
+<span class="dot"></span>RECENT WORKS </h2>
 </div>
-<div class="racesWrapper" style="color:white">
+<div class="racesWrapper projects-banner" style="color:white">
 	<div class="races appear">
 	    <div class="project_holder">
 	        <a href="https://pablo-designportfolio.netlify.app/CIXI">	       
@@ -545,7 +639,7 @@ Creativity</h1>		</div>
 				<div class="elementor-widget-container">
 							<p style="text-align: left;"><span style="white-space-collapse: preserve;">I work at the intersection of technical detail and artistic expression, blending both to create meaningful experiences.</span></p>						</div>
 				</div>
-				<div class="elementor-element elementor-element-591454d right elementor-widget__width-initial ob-has-background-overlay elementor-widget elementor-widget-button" data-id="591454d" data-element_type="widget" data-settings="{&quot;_ob_butterbutton_use_it&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-591454d right contact-btn elementor-widget__width-initial ob-has-background-overlay elementor-widget elementor-widget-button" data-id="591454d" data-element_type="widget" data-settings="{&quot;_ob_butterbutton_use_it&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 							<div class="elementor-button-wrapper">
 					<a class="elementor-button elementor-button-link elementor-size-sm" href="mailto:garza_cupo_0x@icloud.com">
@@ -582,13 +676,11 @@ Creativity</h1>		</div>
 				<div class="elementor-widget-container">
 							<p style="text-align: left;"><span style="white-space-collapse: preserve;">A showcase of handcrafted short animations as personal experimentation for aesthetics and storytelling.</span></p>						</div>
 				</div>
-				<div class="elementor-element elementor-element-f7f61bd animation animation-btn ob-has-background-overlay elementor-widget elementor-widget-button" data-id="f7f61bd" data-element_type="widget" data-settings="{&quot;_ob_butterbutton_use_it&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="button.default">
+				<div class="elementor-element elementor-element-f7f61bd animation-banner animation animation-btn ob-has-background-overlay elementor-widget elementor-widget-button" data-id="f7f61bd" data-element_type="widget" data-settings="{&quot;_ob_butterbutton_use_it&quot;:&quot;no&quot;,&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 							<div class="elementor-button-wrapper">
 					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pablofraustro.com/" target="_blank">
 						<span class="elementor-button-content-wrapper">
-						<span class="elementor-button-icon">
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-external-link-alt" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>			</span>
 									<span class="elementor-button-text">Take a look</span>
 					</span>
 					</a>
@@ -651,7 +743,59 @@ Creativity</h1>		</div>
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-adf56b5 ob-has-background-overlay elementor-widget elementor-widget-html" data-id="adf56b5" data-element_type="widget" data-settings="{&quot;_ob_perspektive_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;}" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<script>let chck_if_gsap_loaded = setInterval(function(){
+			<link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+<script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		 const cursor = new MouseFollower({
+  container: document.body,
+  el: null, 
+  stickDelta: 0.20,
+	    stateDetection: {
+        '-big': '.big',
+    }
+});
+const contact = document.querySelector('.contact-btn');
+const projectsBanner = document.querySelector('.projects-banner');
+const animationBanner = document.querySelector('.animation-banner');
+
+			
+
+	
+animationBanner.addEventListener('mouseenter', () => {
+	cursor.addState("big");
+	cursor.setText('<svg width="24" height="24" aria-hidden="true" style="fill:white" class="e-font-icon-svg e-fas-external-link-alt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"><\/path><\/svg>');
+});
+
+animationBanner.addEventListener('mouseleave', () => {
+	cursor.removeText();
+	cursor.removeState("big");
+});
+
+contact.addEventListener('mouseenter', () => {
+	cursor.addState("big");
+	cursor.setText('<svg style="fill:white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20,4H4C2.895,4,2,4.895,2,6v12c0,1.105,0.895,2,2,2h16c1.105,0,2-0.895,2-2V6C22,4.895,21.105,4,20,4z M20,8.236l-8,4.882 L4,8.236V6h16V8.236z"><\/path><\/svg>');
+});
+
+contact.addEventListener('mouseleave', () => {
+	cursor.removeText();
+	cursor.removeState("big");
+});
+
+projectsBanner.addEventListener('mouseenter', () => {
+	cursor.addState("big");
+	cursor.setText('<p style="font-size:12px;padding:5px;">SCROLL<\/p>');
+});
+
+projectsBanner.addEventListener('mouseleave', () => {
+	cursor.removeText();
+	cursor.removeState("big");
+});
+		
+	});
+		
+let chck_if_gsap_loaded = setInterval(function(){
 		
 		if(window.gsap && window.ScrollTrigger){
 			gsap.registerPlugin( ScrollTrigger );
@@ -705,6 +849,7 @@ ScrollTrigger.create({
 				scrub:1
 			}
 		});
+		
 				
 		let appear = gsap.utils.toArray('.appear');
 
@@ -789,7 +934,8 @@ gsap.utils.toArray('.fadeout-after').forEach(element => {
 	
 
 		
-}</script>		</div>
+} 
+</script>		</div>
 				</div>
 					</div>
 				</div>
@@ -798,7 +944,7 @@ gsap.utils.toArray('.fadeout-after').forEach(element => {
 
 
 <div class="wp-block-group homepage-footer is-layout-flow wp-container-core-group-is-layout-3 wp-block-group-is-layout-flow" style="padding-top:150px;padding-right:20%;padding-bottom:var(--wp--preset--spacing--50);padding-left:20%">
-<p class="fadeout-after has-base-color has-text-color has-link-color has-custom-2-font-size wp-elements-4599e7cbd86ba5e0c1a66efacb611635" style="padding-bottom:var(--wp--preset--spacing--80);font-style:normal;font-weight:200"><a href="#">SCROLL TO TOP</a></p>
+<p class="fadeout-after has-base-color has-text-color has-link-color has-custom-2-font-size wp-elements-469f9f9b8f3de467fad73b3274107dd1" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);font-style:normal;font-weight:200"><a href="#">SCROLL TO TOP</a></p>
 
 
 
@@ -893,7 +1039,7 @@ gsap.utils.toArray('.fadeout-after').forEach(element => {
 <script src="https://pablo-designportfolio.netlify.app/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.10" id="elementor-webpack-runtime-js"></script>
 <script src="https://pablo-designportfolio.netlify.app/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.10" id="elementor-frontend-modules-js"></script>
 <script src="https://pablo-designportfolio.netlify.app/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
-<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.25.10","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"home_screen":true,"nested-elements":true,"editor_v2":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"launchpad-checklist":true},"urls":{"assets":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/pablo-designportfolio.netlify.app\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"f01c089cb0"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":54,"title":"Pablo%20Fraustro%20%E2%80%93%20Interaction%20designer","excerpt":"","featuredImage":false}};</script>
+<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.25.10","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"e_css_smooth_scroll":true,"home_screen":true,"nested-elements":true,"editor_v2":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"launchpad-checklist":true},"urls":{"assets":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/pablo-designportfolio.netlify.app\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"abbf4ff387"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":54,"title":"Pablo%20Fraustro%20%E2%80%93%20Interaction%20designer","excerpt":"","featuredImage":false}};</script>
 <script src="https://pablo-designportfolio.netlify.app/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.10" id="elementor-frontend-js"></script>
 </body>
 </html>

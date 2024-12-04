@@ -433,7 +433,6 @@ a:not(.contact-btn a):not(.projects-banner a):not(.animation-banner a):hover:aft
 .projects-menu ul{
 width: 100vw !important;
     padding: 20px 10px  !important;
-height: 100vh !important;
     background-color: #f3f3f3  !important;
 margin-top:30px !important;
     border: none  !important;
@@ -444,7 +443,8 @@ box-shadow: none;
 
 .menu{
 font-size:24px !important;
-    padding-top: 0% !important;
+    padding-top: 15px !important;
+padding-bottom: 15px !important;
     padding-right: 9% !important;
 justify-content:flex-end !important;
 }
@@ -953,7 +953,7 @@ gsap.utils.toArray('.fadeout-after').forEach(element => {
 	}
   });
 });
-	
+	if(window.innerWidth > 780){
 	//sticky menu
 var actionNav = gsap.to('.menu', {y:'-=60', duration:0.5, ease:'power2.in', paused:true});
 
@@ -972,6 +972,7 @@ ScrollTrigger.create({
     }
   }
 });
+	}
 	
 	//fade out with no initial animation 
 gsap.utils.toArray('.fadeout-after').forEach(element => {
@@ -1185,9 +1186,9 @@ scrollTrigger: {
 wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 </script>
 <script id="presto-components-js-extra">var prestoComponents = {"url":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/presto-player\/dist\/components\/web-components\/web-components.esm.js?ver=1732802027"};
-var prestoPlayer = {"plugin_url":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/presto-player\/","logged_in":"","root":"https:\/\/pablo-designportfolio.netlify.app\/wp-json\/","nonce":"9dd9a39ae7","ajaxurl":"https:\/\/pablo-designportfolio.netlify.app\/wp-admin\/admin-ajax.php","isAdmin":"","isSetup":{"bunny":false},"proVersion":"","isPremium":"","wpVersionString":"wp\/v2\/","prestoVersionString":"presto-player\/v1\/","debug":"","debug_navigator":"","i18n":{"skip":"Skip","rewatch":"Rewatch","emailPlaceholder":"Email address","emailDefaultHeadline":"Enter your email to play this episode.","chapters":"Chapters","show_chapters":"Show Chapters","hide_chapters":"Hide Chapters","restart":"Restart","rewind":"Rewind {seektime}s","play":"Play","pause":"Pause","fastForward":"Forward {seektime}s","seek":"Seek","seekLabel":"{currentTime} of {duration}","played":"Played","buffered":"Buffered","currentTime":"Current time","duration":"Duration","volume":"Volume","mute":"Mute","unmute":"Unmute","enableCaptions":"Enable captions","disableCaptions":"Disable captions","download":"Download","enterFullscreen":"Enter fullscreen","exitFullscreen":"Exit fullscreen","frameTitle":"Player for {title}","captions":"Captions","settings":"Settings","pip":"PIP","menuBack":"Go back to previous menu","speed":"Speed","normal":"Normal","quality":"Quality","loop":"Loop","start":"Start","end":"End","all":"All","reset":"Reset","disabled":"Disabled","enabled":"Enabled","advertisement":"Ad","qualityBadge":{"2160":"4K","1440":"HD","1080":"HD","720":"HD","576":"SD","480":"SD"},"auto":"AUTO","upNext":"Up Next","startOver":"Start Over"}};
+var prestoPlayer = {"plugin_url":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/presto-player\/","logged_in":"","root":"https:\/\/pablo-designportfolio.netlify.app\/wp-json\/","nonce":"e33dea4d27","ajaxurl":"https:\/\/pablo-designportfolio.netlify.app\/wp-admin\/admin-ajax.php","isAdmin":"","isSetup":{"bunny":false},"proVersion":"","isPremium":"","wpVersionString":"wp\/v2\/","prestoVersionString":"presto-player\/v1\/","debug":"","debug_navigator":"","i18n":{"skip":"Skip","rewatch":"Rewatch","emailPlaceholder":"Email address","emailDefaultHeadline":"Enter your email to play this episode.","chapters":"Chapters","show_chapters":"Show Chapters","hide_chapters":"Hide Chapters","restart":"Restart","rewind":"Rewind {seektime}s","play":"Play","pause":"Pause","fastForward":"Forward {seektime}s","seek":"Seek","seekLabel":"{currentTime} of {duration}","played":"Played","buffered":"Buffered","currentTime":"Current time","duration":"Duration","volume":"Volume","mute":"Mute","unmute":"Unmute","enableCaptions":"Enable captions","disableCaptions":"Disable captions","download":"Download","enterFullscreen":"Enter fullscreen","exitFullscreen":"Exit fullscreen","frameTitle":"Player for {title}","captions":"Captions","settings":"Settings","pip":"PIP","menuBack":"Go back to previous menu","speed":"Speed","normal":"Normal","quality":"Quality","loop":"Loop","start":"Start","end":"End","all":"All","reset":"Reset","disabled":"Disabled","enabled":"Enabled","advertisement":"Ad","qualityBadge":{"2160":"4K","1440":"HD","1080":"HD","720":"HD","576":"SD","480":"SD"},"auto":"AUTO","upNext":"Up Next","startOver":"Start Over"}};
 var prestoComponents = {"url":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/presto-player\/dist\/components\/web-components\/web-components.esm.js?ver=1732802027"};
-var prestoPlayer = {"plugin_url":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/presto-player\/","logged_in":"","root":"https:\/\/pablo-designportfolio.netlify.app\/wp-json\/","nonce":"9dd9a39ae7","ajaxurl":"https:\/\/pablo-designportfolio.netlify.app\/wp-admin\/admin-ajax.php","isAdmin":"","isSetup":{"bunny":false},"proVersion":"","isPremium":"","wpVersionString":"wp\/v2\/","prestoVersionString":"presto-player\/v1\/","debug":"","debug_navigator":"","i18n":{"skip":"Skip","rewatch":"Rewatch","emailPlaceholder":"Email address","emailDefaultHeadline":"Enter your email to play this episode.","chapters":"Chapters","show_chapters":"Show Chapters","hide_chapters":"Hide Chapters","restart":"Restart","rewind":"Rewind {seektime}s","play":"Play","pause":"Pause","fastForward":"Forward {seektime}s","seek":"Seek","seekLabel":"{currentTime} of {duration}","played":"Played","buffered":"Buffered","currentTime":"Current time","duration":"Duration","volume":"Volume","mute":"Mute","unmute":"Unmute","enableCaptions":"Enable captions","disableCaptions":"Disable captions","download":"Download","enterFullscreen":"Enter fullscreen","exitFullscreen":"Exit fullscreen","frameTitle":"Player for {title}","captions":"Captions","settings":"Settings","pip":"PIP","menuBack":"Go back to previous menu","speed":"Speed","normal":"Normal","quality":"Quality","loop":"Loop","start":"Start","end":"End","all":"All","reset":"Reset","disabled":"Disabled","enabled":"Enabled","advertisement":"Ad","qualityBadge":{"2160":"4K","1440":"HD","1080":"HD","720":"HD","576":"SD","480":"SD"},"auto":"AUTO","upNext":"Up Next","startOver":"Start Over"}};</script>
+var prestoPlayer = {"plugin_url":"https:\/\/pablo-designportfolio.netlify.app\/wp-content\/plugins\/presto-player\/","logged_in":"","root":"https:\/\/pablo-designportfolio.netlify.app\/wp-json\/","nonce":"e33dea4d27","ajaxurl":"https:\/\/pablo-designportfolio.netlify.app\/wp-admin\/admin-ajax.php","isAdmin":"","isSetup":{"bunny":false},"proVersion":"","isPremium":"","wpVersionString":"wp\/v2\/","prestoVersionString":"presto-player\/v1\/","debug":"","debug_navigator":"","i18n":{"skip":"Skip","rewatch":"Rewatch","emailPlaceholder":"Email address","emailDefaultHeadline":"Enter your email to play this episode.","chapters":"Chapters","show_chapters":"Show Chapters","hide_chapters":"Hide Chapters","restart":"Restart","rewind":"Rewind {seektime}s","play":"Play","pause":"Pause","fastForward":"Forward {seektime}s","seek":"Seek","seekLabel":"{currentTime} of {duration}","played":"Played","buffered":"Buffered","currentTime":"Current time","duration":"Duration","volume":"Volume","mute":"Mute","unmute":"Unmute","enableCaptions":"Enable captions","disableCaptions":"Disable captions","download":"Download","enterFullscreen":"Enter fullscreen","exitFullscreen":"Exit fullscreen","frameTitle":"Player for {title}","captions":"Captions","settings":"Settings","pip":"PIP","menuBack":"Go back to previous menu","speed":"Speed","normal":"Normal","quality":"Quality","loop":"Loop","start":"Start","end":"End","all":"All","reset":"Reset","disabled":"Disabled","enabled":"Enabled","advertisement":"Ad","qualityBadge":{"2160":"4K","1440":"HD","1080":"HD","720":"HD","576":"SD","480":"SD"},"auto":"AUTO","upNext":"Up Next","startOver":"Start Over"}};</script>
 <script src="https://pablo-designportfolio.netlify.app/wp-content/plugins/presto-player/src/player/player-static.js?ver=1732802027" type="module" defer></script><script id="wp-block-template-skip-link-js-after">( function() {
 		var skipLinkTarget = document.querySelector( 'main' ),
 			sibling,

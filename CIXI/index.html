@@ -346,7 +346,6 @@ a:not(.contact-btn a):not(.projects-banner a):not(.animation-banner a):hover:aft
 .projects-menu ul{
 width: 100vw !important;
     padding: 20px 10px  !important;
-height: 100vh !important;
     background-color: #f3f3f3  !important;
 margin-top:30px !important;
     border: none  !important;
@@ -357,7 +356,8 @@ box-shadow: none;
 
 .menu{
 font-size:24px !important;
-    padding-top: 0% !important;
+    padding-top: 15px !important;
+padding-bottom: 15px !important;
     padding-right: 9% !important;
 justify-content:flex-end !important;
 }
@@ -752,24 +752,26 @@ el.addEventListener('mouseleave', () => {
 
 function my_stuff() {
 	
+if(window.innerWidth > 780){
 //sticky menu
-var actionNav = gsap.to('.menu', {y:'-=60', duration:0.5, ease:'power2.in', paused:true});
+	var actionNav = gsap.to('.menu', {y:'-=60', duration:0.5, ease:'power2.in', paused:true});
 
-ScrollTrigger.create({
-  trigger: ".menu",
-  start: "10px top",
-  end: 99999,
-  onUpdate: ({progress, direction, isActive}) => {
-    if (direction == -1) {
-      actionNav.reverse()
-    } if (direction == 1 ) {
-      actionNav.play()
-    } else if (direction == 1 && isActive == true) {
-      actionNav.play()
-    }
-  }
-});
+	ScrollTrigger.create({
+	  trigger: ".menu",
+	  start: "10px top",
+	  end: 99999,
+	  onUpdate: ({progress, direction, isActive}) => {
+		if (direction == -1) {
+		  actionNav.reverse()
+		} if (direction == 1 ) {
+		  actionNav.play()
+		} else if (direction == 1 && isActive == true) {
+		  actionNav.play()
+		}
+	  }
+	});
 	
+}
 //fade out with initial animation
 gsap.set(".fadeout", { opacity: 1 });
   gsap.to(".fadeout", {

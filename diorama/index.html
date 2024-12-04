@@ -349,7 +349,6 @@ a:not(.contact-btn a):not(.projects-banner a):not(.animation-banner a):hover:aft
 .projects-menu ul{
 width: 100vw !important;
     padding: 20px 10px  !important;
-height: 100vh !important;
     background-color: #f3f3f3  !important;
 margin-top:30px !important;
     border: none  !important;
@@ -360,7 +359,8 @@ box-shadow: none;
 
 .menu{
 font-size:24px !important;
-    padding-top: 0% !important;
+    padding-top: 15px !important;
+padding-bottom: 15px !important;
     padding-right: 9% !important;
 justify-content:flex-end !important;
 }
@@ -648,7 +648,7 @@ margin: 0 !important;}
 
 
 
-<figure class="wp-block-video fade-banner banner-video" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--30)"><video autoplay loop muted src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/1-build.mp4" playsinline></video></figure>
+<figure class="wp-block-video fade-banner banner-video" style="margin-top:0px;margin-bottom:0px;padding-top:var(--wp--preset--spacing--50);padding-right:0;padding-left:0"><video autoplay loop muted src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/1-build.mp4" playsinline></video></figure>
 
 
 
@@ -812,7 +812,7 @@ gsap.utils.toArray('.fadeout-after').forEach(element => {
 	}
   });
 });
-	
+	if(window.innerWidth > 780){
 	//sticky menu
 var actionNav = gsap.to('.menu', {y:'-=60', duration:0.5, ease:'power2.in', paused:true});
 
@@ -831,6 +831,7 @@ ScrollTrigger.create({
     }
   }
 });
+	}
 	
 	//fade out with no initial animation 
 gsap.utils.toArray('.fadeout-after').forEach(element => {

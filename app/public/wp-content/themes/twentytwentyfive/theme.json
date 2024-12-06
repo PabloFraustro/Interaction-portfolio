@@ -182,6 +182,49 @@
 					]
 				},
 				{
+					"fontFamily": "Satoshi",
+					"slug": "satoshi",
+					"fontFace": [
+						{
+							"fontFamily": "Satoshi",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"http://localhost:10014/wp-content/uploads/2024/12/Satoshi-Regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "Satoshi",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"http://localhost:10014/wp-content/uploads/2024/12/Satoshi-Medium.ttf"
+							]
+						},
+						{
+							"fontFamily": "Satoshi",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"http://localhost:10014/wp-content/uploads/2024/12/Satoshi-Light.ttf"
+							]
+						},
+						{
+							"fontFamily": "Satoshi",
+							"fontStretch": "",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"http://localhost:10014/wp-content/uploads/2024/12/Satoshi-Bold.ttf"
+							]
+						}
+					],
+					"isBcf": true
+				},
+				{
 					"fontFamily": "GT-Walsheim",
 					"slug": "gt-walsheim",
 					"fontFace": [

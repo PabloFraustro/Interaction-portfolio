@@ -419,6 +419,12 @@ vertical-align: text-top;
 /* responsive */
 @media only screen and (max-width: 780px) {
 
+.menu, #modal-1 {
+margin-top: 50px !important;}
+
+.home-link{
+top:-25px !important;}
+
 .page-footer, .cixi-footer{
 margin: 0 8%;
 margin-bottom: 80px;
@@ -526,7 +532,6 @@ padding-top:13% !important;
 .wp-block-navigation__responsive-container-close {
     position: absolute;
     right: 9%;
-    top: 4%;
     z-index: 2;
 }
 
@@ -581,8 +586,15 @@ margin: 5% 12% !important;}
 padding-left:0 !important;
 }
 
-.has-custom-7-font-size, .has-custom-5-font-size, .has-custom-2-font-size {
+.has-custom-7-font-size, .has-custom-5-font-size  {
     font-size: 32px !important;
+}
+
+.has-custom-2-font-size:not(h2){
+font-size: 24px !important;}
+
+.page-title{
+font-size: 38px !important;
 }
 
 .page-center-txt{
@@ -649,7 +661,6 @@ margin: 0 !important;}
 }
 
 /* end responsive */
-
 :root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--medium);}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){text-decoration: underline;}</style>
@@ -727,8 +738,8 @@ margin: 0 !important;}
 	const next = document.querySelector(' .next');
 	const socials = document.querySelector(' .socials-footer');
 	const contact = document.querySelector(' .contact-footer');
-	const homeLink = document.querySelector(' .home-link');	
-	const homeLinkMob = document.querySelector('.wp-block-navigation__responsive-container-content .home-link');	
+	const homeLink = document.querySelector('.wp-block-navigation__responsive-container-content .home-link');	
+	   
 
 	if (url.includes("/homepage/")) {
 		if(linkEN) linkEN.href = url;
@@ -742,7 +753,6 @@ margin: 0 !important;}
 		socials.innerHTML = "Socials";
 		contact.children[0].innerHTML = "Contact by email";
 		if(homeLink) homeLink.children[0].href = "https://pablo-designportfolio.netlify.app/homepage";
-		if(homeLinkMob) homeLinkMob.children[0].href = "https://pablo-designportfolio.netlify.app/homepage";
 		if(projectsNav) ChangeUrl("");
 		currentLang = "EN"; 
 	  } else if (url.includes("/es/")) {
@@ -757,7 +767,6 @@ margin: 0 !important;}
 		socials.innerHTML = "Redes sociales";
 		contact.children[0].innerHTML = "Contactar por email";
 		if(homeLink) homeLink.children[0].href = "https://pablo-designportfolio.netlify.app/es/inicio";
-		if(homeLinkMob) homeLinkMob.children[0].href = "https://pablo-designportfolio.netlify.app/es/inicio";	  
 		if(projectsNav) ChangeUrl("es/inicio");
 		currentLang = "ES"; 
 	  } else if (url.includes("/fr/")) {
@@ -773,7 +782,6 @@ margin: 0 !important;}
 		contact.children[0].innerHTML = "Contact par email";
 		if(scrollFooter) scrollFooter.children[0].innerHTML = "RETOUR HAUT DE PAGE";
 		if(homeLink) homeLink.children[0].href = "https://pablo-designportfolio.netlify.app/fr/accueil";
-		if(homeLinkMob) homeLinkMob.children[0].href = "https://pablo-designportfolio.netlify.app/fr/accueil";
 		currentLang = "FR"; 
 	  }   else if (url.includes("/it/")) {
 		if(linkEN) linkEN.href = url.replace("it/pagina-principale","");
@@ -782,7 +790,6 @@ margin: 0 !important;}
 	    if(linkIT) linkIT.href = url;
 		if(projectsNav) ChangeUrl("it/pagina-principale");
 		if(homeLink) homeLink.children[0].href = "https://pablo-designportfolio.netlify.app/it/pagina-principale";
-		if(homeLinkMob) homeLinkMob.children[0].href = "https://pablo-designportfolio.netlify.app/it/pagina-principale";
 		 if(projectsNav) projectsNav.innerHTML = "PROGETTI";
 		if(next) next.innerHTML = "AVANTI";
 		if(vrLink) vrLink.innerHTML = "REHABILITAZIONE IN VR";
@@ -790,16 +797,14 @@ margin: 0 !important;}
 		socials.innerHTML = "Social";
 		contact.children[0].innerHTML = "Contatto via email";
 		currentLang = "IT"; 
-	  } else{
-	//Do nothing
 	  }
-	
+	   
 	const langSelector = document.querySelector('.lang-selector button');
 	if(langSelector) langSelector.innerHTML = currentLang;
 	
 	function ChangeUrl(stringUrl){
 	
-	const projectLinks = document.querySelectorAll('.mobile .projects-nav a');
+	const projectLinks = document.querySelectorAll('.projects-nav a');
 	if(projectLinks){
 		projectLinks[0].href = `https://pablo-designportfolio.netlify.app/${stringUrl}/cixi`;
 		projectLinks[1].href = `https://pablo-designportfolio.netlify.app/${stringUrl}/diorama`;

@@ -422,6 +422,12 @@ vertical-align: text-top;
 /* responsive */
 @media only screen and (max-width: 780px) {
 
+.menu, #modal-1 {
+margin-top: 50px !important;}
+
+.home-link{
+top:-25px !important;}
+
 .page-footer, .cixi-footer{
 margin: 0 8%;
 margin-bottom: 80px;
@@ -529,7 +535,6 @@ padding-top:13% !important;
 .wp-block-navigation__responsive-container-close {
     position: absolute;
     right: 9%;
-    top: 4%;
     z-index: 2;
 }
 
@@ -584,8 +589,15 @@ margin: 5% 12% !important;}
 padding-left:0 !important;
 }
 
-.has-custom-7-font-size, .has-custom-5-font-size, .has-custom-2-font-size {
+.has-custom-7-font-size, .has-custom-5-font-size  {
     font-size: 32px !important;
+}
+
+.has-custom-2-font-size:not(h2){
+font-size: 24px !important;}
+
+.page-title{
+font-size: 38px !important;
 }
 
 .page-center-txt{
@@ -652,7 +664,6 @@ margin: 0 !important;}
 }
 
 /* end responsive */
-
 :root :where(.wp-block-post-navigation-link){font-size: var(--wp--preset--font-size--medium);}
 :root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--medium);}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
@@ -732,8 +743,8 @@ margin: 0 !important;}
 	const next = document.querySelector(' .next');
 	const socials = document.querySelector(' .socials-footer');
 	const contact = document.querySelector(' .contact-footer');
-	const homeLink = document.querySelector(' .home-link');	
-	const homeLinkMob = document.querySelector('.wp-block-navigation__responsive-container-content .home-link');	
+	const homeLink = document.querySelector('.wp-block-navigation__responsive-container-content .home-link');	
+	   
 
 	if (url.includes("/homepage/")) {
 		if(linkEN) linkEN.href = url;
@@ -747,7 +758,6 @@ margin: 0 !important;}
 		socials.innerHTML = "Socials";
 		contact.children[0].innerHTML = "Contact by email";
 		if(homeLink) homeLink.children[0].href = "https://pablo-designportfolio.netlify.app/homepage";
-		if(homeLinkMob) homeLinkMob.children[0].href = "https://pablo-designportfolio.netlify.app/homepage";
 		if(projectsNav) ChangeUrl("");
 		currentLang = "EN"; 
 	  } else if (url.includes("/es/")) {
@@ -762,7 +772,6 @@ margin: 0 !important;}
 		socials.innerHTML = "Redes sociales";
 		contact.children[0].innerHTML = "Contactar por email";
 		if(homeLink) homeLink.children[0].href = "https://pablo-designportfolio.netlify.app/es/inicio";
-		if(homeLinkMob) homeLinkMob.children[0].href = "https://pablo-designportfolio.netlify.app/es/inicio";	  
 		if(projectsNav) ChangeUrl("es/inicio");
 		currentLang = "ES"; 
 	  } else if (url.includes("/fr/")) {
@@ -778,7 +787,6 @@ margin: 0 !important;}
 		contact.children[0].innerHTML = "Contact par email";
 		if(scrollFooter) scrollFooter.children[0].innerHTML = "RETOUR HAUT DE PAGE";
 		if(homeLink) homeLink.children[0].href = "https://pablo-designportfolio.netlify.app/fr/accueil";
-		if(homeLinkMob) homeLinkMob.children[0].href = "https://pablo-designportfolio.netlify.app/fr/accueil";
 		currentLang = "FR"; 
 	  }   else if (url.includes("/it/")) {
 		if(linkEN) linkEN.href = url.replace("it/pagina-principale","");
@@ -787,7 +795,6 @@ margin: 0 !important;}
 	    if(linkIT) linkIT.href = url;
 		if(projectsNav) ChangeUrl("it/pagina-principale");
 		if(homeLink) homeLink.children[0].href = "https://pablo-designportfolio.netlify.app/it/pagina-principale";
-		if(homeLinkMob) homeLinkMob.children[0].href = "https://pablo-designportfolio.netlify.app/it/pagina-principale";
 		 if(projectsNav) projectsNav.innerHTML = "PROGETTI";
 		if(next) next.innerHTML = "AVANTI";
 		if(vrLink) vrLink.innerHTML = "REHABILITAZIONE IN VR";
@@ -795,16 +802,14 @@ margin: 0 !important;}
 		socials.innerHTML = "Social";
 		contact.children[0].innerHTML = "Contatto via email";
 		currentLang = "IT"; 
-	  } else{
-	//Do nothing
 	  }
-	
+	   
 	const langSelector = document.querySelector('.lang-selector button');
 	if(langSelector) langSelector.innerHTML = currentLang;
 	
 	function ChangeUrl(stringUrl){
 	
-	const projectLinks = document.querySelectorAll('.mobile .projects-nav a');
+	const projectLinks = document.querySelectorAll('.projects-nav a');
 	if(projectLinks){
 		projectLinks[0].href = `https://pablo-designportfolio.netlify.app/${stringUrl}/cixi`;
 		projectLinks[1].href = `https://pablo-designportfolio.netlify.app/${stringUrl}/diorama`;
@@ -1045,7 +1050,7 @@ margin: 0 !important;}
 
 
 
-<figure data-wp-context="{&quot;imageId&quot;:&quot;6755e72b40fb2&quot;}" data-wp-interactive="core/image" class="wp-block-image size-full fadeout-after wp-lightbox-container" style="margin-top:150px;margin-bottom:150px"><img fetchpriority="high" decoding="async" width="2188" height="934" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on-async--click="actions.showLightbox" data-wp-on-async--load="callbacks.setButtonStyles" data-wp-on-async-window--resize="callbacks.setButtonStyles" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508.jpg" alt="user journey" class="wp-image-2496" srcset="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508.jpg 2188w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508-300x128.jpg 300w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508-1024x437.jpg 1024w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508-768x328.jpg 768w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508-1536x656.jpg 1536w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508-2048x874.jpg 2048w" sizes="(max-width: 2188px) 100vw, 2188px"><button class="lightbox-trigger" type="button" aria-haspopup="dialog" aria-label="Ingrandisci l’immagine: user journey" data-wp-init="callbacks.initTriggerButton" data-wp-on-async--click="actions.showLightbox" data-wp-style--right="state.imageButtonRight" data-wp-style--top="state.imageButtonTop">
+<figure data-wp-context="{&quot;imageId&quot;:&quot;6755f0e25c811&quot;}" data-wp-interactive="core/image" class="wp-block-image size-full fadeout-after wp-lightbox-container" style="margin-top:150px;margin-bottom:150px"><img fetchpriority="high" decoding="async" width="2188" height="934" data-wp-class--hide="state.isContentHidden" data-wp-class--show="state.isContentVisible" data-wp-init="callbacks.setButtonStyles" data-wp-on-async--click="actions.showLightbox" data-wp-on-async--load="callbacks.setButtonStyles" data-wp-on-async-window--resize="callbacks.setButtonStyles" src="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508.jpg" alt="user journey" class="wp-image-2496" srcset="https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508.jpg 2188w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508-300x128.jpg 300w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508-1024x437.jpg 1024w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508-768x328.jpg 768w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508-1536x656.jpg 1536w, https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508-2048x874.jpg 2048w" sizes="(max-width: 2188px) 100vw, 2188px"><button class="lightbox-trigger" type="button" aria-haspopup="dialog" aria-label="Ingrandisci l’immagine: user journey" data-wp-init="callbacks.initTriggerButton" data-wp-on-async--click="actions.showLightbox" data-wp-style--right="state.imageButtonRight" data-wp-style--top="state.imageButtonTop">
 			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewbox="0 0 12 12">
 				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z"></path>
 			</svg>
@@ -1337,7 +1342,7 @@ scrollTrigger: {
 </div>
 </footer>
 </div>
-<script type="application/json" id="wp-script-module-data-@wordpress/interactivity">{"state":{"core/image":{"metadata":{"6755e72b40fb2":{"uploadedSrc":"https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508.jpg","figureClassNames":"wp-block-image size-full fadeout-after","figureStyles":"margin-top:150px;margin-bottom:150px","imgClassNames":"wp-image-2496","imgStyles":null,"targetWidth":2188,"targetHeight":934,"scaleAttr":false,"ariaLabel":"Ingrandisci l’immagine: user journey","alt":"user journey"}}}}}</script>
+<script type="application/json" id="wp-script-module-data-@wordpress/interactivity">{"state":{"core/image":{"metadata":{"6755f0e25c811":{"uploadedSrc":"https://pablo-designportfolio.netlify.app/wp-content/uploads/2024/11/3-user_journey-e1732806565508.jpg","figureClassNames":"wp-block-image size-full fadeout-after","figureStyles":"margin-top:150px;margin-bottom:150px","imgClassNames":"wp-image-2496","imgStyles":null,"targetWidth":2188,"targetHeight":934,"scaleAttr":false,"ariaLabel":"Ingrandisci l’immagine: user journey","alt":"user journey"}}}}}</script>
 			<script type="text/javascript">const lazyloadRunObserver = () => {
 					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
 					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {

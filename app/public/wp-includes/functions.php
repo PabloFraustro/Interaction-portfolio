@@ -9083,3 +9083,4 @@ function wp_is_heic_image_mime_type( $mime_type ) {
 
 	return in_array( $mime_type, $heic_mime_types, true );
 }
+

@@ -188,6 +188,9 @@ a, .projects-menu button,.homepage-lang button {
   width: 0;
 }
 
+.scroll-footer{
+font-weight:500 !important;}
+
 .homepage-footer a:not(.homepage-lang a):after,.homepage-lang button:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
@@ -325,6 +328,7 @@ padding:10px;
     padding-left: 17%;
 }
 
+
 .right, .appear, .animation{
 opacity:0;
 }
@@ -423,11 +427,14 @@ vertical-align: text-top;
 .socials-footer{
 display:none !important;}
 
+.wp-block-navigation__responsive-container-close{
+top:20px !important;
+}
+
+.elementor-element-f4f3613 {padding-bottom:50px !important;}
+
 .language-footer{
 font-size:var(--wp--preset--font-size--medium) !important}
-
-.home-link{
-top:-25px !important;}
 
 nav{
 padding:15px 0 ;}
@@ -671,7 +678,7 @@ margin: 0 !important;}
 :root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--medium);}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){text-decoration: underline;}</style>
-<style id="core-block-supports-inline-css">.wp-container-content-2{flex-basis:53vw;}.wp-container-content-3{flex-basis:10px;}.wp-container-core-navigation-is-layout-1{flex-wrap:nowrap;gap:5px;justify-content:flex-start;}.wp-container-core-group-is-layout-1{flex-wrap:nowrap;gap:0px;}.wp-container-2{top:calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));position:sticky;z-index:10;}.wp-elements-974c4d433db6377d5728a82ccd7027c8 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--custom-black);}.wp-container-content-4{grid-column:span 3;grid-row:span 1;}.wp-elements-cbaecce9744c28a48f3e5beb2f8e0ecd a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-5{grid-column:span 2;grid-row:span 1;}.wp-elements-99e6bf5d4e360755778b46daacb31642 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-6{grid-column:span 1;}.wp-container-content-7{grid-column:span 3;}.wp-container-content-8{grid-column:span 3;}.wp-container-content-9{grid-column:span 3;}.wp-container-core-group-is-layout-2{grid-template-columns:repeat(5, minmax(0, 1fr));gap:0;}.wp-container-core-group-is-layout-3{flex-wrap:nowrap;}.wp-container-core-group-is-layout-4{flex-wrap:nowrap;gap:var(--wp--preset--spacing--50);justify-content:center;}.wp-container-core-group-is-layout-5{flex-wrap:nowrap;}.wp-container-core-group-is-layout-6{flex-wrap:nowrap;justify-content:center;}.wp-container-core-group-is-layout-7 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-7 > * + *{margin-block-start:0px;margin-block-end:0;}</style>
+<style id="core-block-supports-inline-css">.wp-container-content-2{flex-basis:53vw;}.wp-container-content-3{flex-basis:10px;}.wp-container-core-navigation-is-layout-1{flex-wrap:nowrap;gap:5px;justify-content:flex-start;}.wp-container-core-group-is-layout-1{flex-wrap:nowrap;gap:0px;}.wp-container-2{top:calc(0px + var(--wp-admin--admin-bar--position-offset, 0px));position:sticky;z-index:10;}.wp-elements-974c4d433db6377d5728a82ccd7027c8 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--custom-black);}.wp-container-content-4{grid-column:span 3;grid-row:span 1;}.wp-elements-94dd9d68cf2a61e475f67220bf7ff3ec a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-5{grid-column:span 2;grid-row:span 1;}.wp-elements-59c7eb460d6c6e35b605bd01c964b701 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--contrast);}.wp-container-content-6{grid-column:span 1;}.wp-container-content-7{grid-column:span 3;}.wp-container-content-8{grid-column:span 3;}.wp-container-content-9{grid-column:span 3;}.wp-container-core-group-is-layout-2{grid-template-columns:repeat(5, minmax(0, 1fr));gap:0;}.wp-container-core-group-is-layout-3{flex-wrap:nowrap;}.wp-container-core-group-is-layout-4{flex-wrap:nowrap;gap:var(--wp--preset--spacing--50);justify-content:center;}.wp-container-core-group-is-layout-5{flex-wrap:nowrap;}.wp-container-core-group-is-layout-6{flex-wrap:nowrap;justify-content:center;}.wp-container-core-group-is-layout-7 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-7 > * + *{margin-block-start:0px;margin-block-end:0;}</style>
 <style id="wp-block-template-skip-link-inline-css">.skip-link.screen-reader-text {
 			border: 0;
 			clip: rect(1px,1px,1px,1px);
@@ -1022,11 +1029,11 @@ margin: 0 !important;}
 
 
 
-<p class="fade-banner cixi-description has-contrast-color has-text-color has-link-color has-gt-walsheim-font-family wp-elements-cbaecce9744c28a48f3e5beb2f8e0ecd wp-container-content-5" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:clamp(1.403em, 1.403rem + ((1vw - 0.2em) * 1.121), 2.3em);font-style:normal;font-weight:400;line-height:1.4">Conception d&rsquo;une nouvelle manière de conduire les véhicules CIXI en mettant l&rsquo;accent sur le bien-être.</p>
+<p class="fade-banner cixi-description has-contrast-color has-text-color has-link-color has-satoshi-font-family wp-elements-94dd9d68cf2a61e475f67220bf7ff3ec wp-container-content-5" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:clamp(1.403em, 1.403rem + ((1vw - 0.2em) * 1.121), 2.3em);font-style:normal;font-weight:400;line-height:1.4">Conception d&rsquo;une nouvelle manière de conduire les véhicules CIXI en mettant l&rsquo;accent sur le bien-être.</p>
 
 
 
-<p class="fade-banner has-contrast-color has-text-color has-link-color has-gt-walsheim-font-family has-custom-4-font-size wp-elements-99e6bf5d4e360755778b46daacb31642 wp-container-content-6" style="margin-top:0px;margin-right:20%;margin-bottom:0px;margin-left:20%;padding-top:10px">Projets de 2020 à 2023 réalisés chez CIXI, une startup des Alpes françaises qui promeut « la mobilité active » et le bien-être.</p>
+<p class="fade-banner has-contrast-color has-text-color has-link-color has-satoshi-font-family has-custom-4-font-size wp-elements-59c7eb460d6c6e35b605bd01c964b701 wp-container-content-6" style="margin-top:0px;margin-right:20%;margin-bottom:0px;margin-left:20%;padding-top:10px">Projets de 2020 à 2023 réalisés chez CIXI, une startup des Alpes françaises qui promeut « la mobilité active » et le bien-être.</p>
 
 
 
